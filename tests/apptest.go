@@ -61,3 +61,11 @@ func (t AppTest) TestFeed() {
     t.AssertContentType("application/rss+xml; charset=utf-8")
     t.AssertContains("<title>Verbose Logging</title>")
 }
+
+func (t AppTest) TestSitemap() {
+    t.Get("/sitemap.xml")
+    t.AssertOk()
+    t.AssertContentType("application/xml; charset=utf-8")
+    t.AssertContains("/disclaimer")
+    t.AssertContains("/worth-watching-twice-joel-spolsky-railsconf-08-keynote")
+}

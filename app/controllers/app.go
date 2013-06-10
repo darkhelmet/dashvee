@@ -99,7 +99,22 @@ func (c App) Feed() revel.Result {
 }
 
 func (c App) Sitemap() revel.Result {
-    return c.RenderText("Sitemap")
+    posts, err := posts.FindLatest(posts.Len())
+    if err != nil {
+        revel.ERROR.Printf("failed getting posts for sitemap: %s", err)
+        return c.RenderError(err)
+    }
+
+    pages, err := pages.FindLatest(pages.Len())
+    if err != nil {
+        revel.ERROR.Printf("failed getting pages for sitemap: %s", err)
+        return c.RenderError(err)
+    }
+
+    c.Response.ContentType = "application/xml; charset=utf-8"
+    c.RenderArgs["posts"] = posts
+    c.RenderArgs["pages"] = pages
+    return c.RenderTemplate("App/Sitemap.xml")
 }
 
 func (c App) FullArchive() revel.Result {
