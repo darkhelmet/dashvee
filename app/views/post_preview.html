@@ -1,0 +1,17 @@
+<article class="preview main">
+    <h2 class="entry-title">
+        <a href="{{PostCanonical . | CanonicalUrl}}" rel="bookmark">{{.Title}}</a>
+    </h2>
+    <div class="meta">
+        <time datetime="{{.PublishedOn | UTC | ISO8601}}">{{.PublishedOn | DisplayTime}}</time>
+        &middot;
+        Posted in
+        <span class="category">
+            <a href="{{CategoryPath . | CanonicalUrl}}">{{.Category | Titleize}}</a>
+        </span>
+    </div>
+    <div class="snippet">{{.Clean | Truncate 450}}</div>
+    <div class="extra_links">
+        <a href="{{PostCanonical . | CanonicalUrl}}" class="read_more fleft">Keep Reading</a>
+    </div>
+</article>

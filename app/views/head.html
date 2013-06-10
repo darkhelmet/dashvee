@@ -1,0 +1,45 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{{if .title }}{{.title}} | {{end}}{{.SiteTitle}}</title>
+<meta name="description" content="{{.Description}}">
+<meta name="readability-verification" content="ee3QxRba5qSzvNEXBLAgbYCyCMTqMkkmJQrhvQKs">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160, initial-scale=1.0">
+{{if .canonical}}<link rel="canonical" href="{{CanonicalUrl .canonical}}">{{end}}
+<link rel="search" title="{{.SiteTitle}}" type="application/opensearchdescription+xml" href="{{CanonicalUrl "/opensearch.xml"}}">
+<link rel="sitemap" title="Sitemap" type="application/xml" href="{{CanonicalUrl "/sitemap.xml"}}">
+<link rel="shortcut icon" type="image/png" href="{{ImagePath "favicon.png"}}">
+<link rel="apple-touch-icon" href="{{.SiteContact | Gravatar}}?s=114">
+<link rel="alternate" title="{{.SiteTitle}} RSS Feed" type="application/rss+xml" href="{{CanonicalUrl "/feed"}}">
+<link rel="index" title="{{.SiteTitle}}" href="{{CanonicalUrl "/"}}">
+{{template "font.html" "Droid+Sans:regular,italic,bold,bolditalic"}}
+{{template "font.html" "Droid+Sans+Mono"}}
+<link rel="stylesheet" href="{{StylesheetPath "application"}}">
+
+<script type="text/javascript" src="{{JavascriptPath "head"}}"></script>
+
+{{if .post}}
+<meta property="og:title" content="{{.post.Title}} | {{.SiteTitle}}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{PostCanonical .post | CanonicalUrl}}">
+<meta property="og:description" content="{{.post.Description}}">
+<meta property="og:image" content="{{.SiteContact | Gravatar}}?s=100">
+<meta property="og:site_name" content="{{.SiteTitle}}">
+{{end}}
+
+{{if .GoogleAnalytics}}
+<script type="text/javascript">
+    //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{.GoogleAnalytics}}']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    //]]>
+</script>
+{{end}}

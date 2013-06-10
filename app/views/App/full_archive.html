@@ -1,0 +1,7 @@
+<article class="main">
+    <h4 class="archive_title">
+        <a href="{{PostCanonical . | CanonicalUrl}}" rel="bookmark">{{.Title}}</a>
+    </h4>
+    &raquo;
+    <time datetime="{{.PublishedOn | UTC | ISO8601}}">{{.PublishedOn | DisplayTime}}</time>
+</article>

@@ -1,0 +1,31 @@
+<hr>
+<section class="left">
+    <section id="search">
+      <form action="/search">
+        <input name="utf8" type="hidden" value="✓">
+        <input type="text" placeholder="Search {{.SiteTitle}}" id="query" name="query">
+        <input type="image" src="{{ImagePath "magnifier.png"}}">
+      </form>
+    </section>
+    <p>
+        <a href="http://creativecommons.org/licenses/by-sa/2.5/ca/" rel="license">
+            <img src="{{ImagePath "license.png"}}" alt="Creative Commons License">
+        </a>
+        <br>
+        This work is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/2.5/ca/">Creative Commons Licence</a>
+        <br>
+        {{range .PageLinks}}
+            {{if .Footer}}
+                <a href="{{.Path}}">{{.Name}}</a>
+                {{if .After}}{{.After}}{{end}}
+            {{end}}
+        {{end}}
+        <br>
+        Design by Daniel Huckstep
+    </p>
+</section>
+<section class="right">
+<iframe width="160" height="350" src="https://leanpub.com/go-thestdlib/embed" frameborder="0" allowtransparency="true"></iframe>
+</section>
+<script type="text/javascript" async="async" src="{{JavascriptPath "application"}}"></script>

@@ -1,0 +1,21 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+module:testrunner
+
+GET     /                                                   App.Index
+GET     /opensearch.xml                                     App.OpenSearch
+GET     /search                                             App.Search
+GET     /feed                                               App.Feed
+GET     /sitemap.xml                                        App.Sitemap
+GET     /sitemap.xml.gz                                     App.Sitemap
+GET     /archive/full                                       App.FullArchive
+GET     /archive/category                                   App.CategoryArchive
+GET     /archive/month                                      App.MonthlyArchive
+GET     /{<\d{4}>year}/{<\d{2}>month}                       App.Monthly
+GET     /category/{category}                                App.Category
+GET     /{<\d{4}>year}/{<\d{2}>month}/{<\d{2}>day}/{slug}   App.Permalink
+GET     /tag/{tag}                                          App.Tag
+GET     /{<about|contact|disclaimer|projects|talks>slug}    App.Page
+GET     /{<.+>filepath}                                     Static.Serve("public")

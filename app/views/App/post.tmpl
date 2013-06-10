@@ -1,0 +1,29 @@
+<article class="post hentry">
+    <h1 class="entry-title">
+        <a href="{{PostCanonical . | CanonicalUrl}}" rel="bookmark">{{.Title}}</a>
+    </h1>
+    <div class="meta">
+        <time class="updated" datetime="{{.PublishedOn | UTC | ISO8601}}" style="display: none"></time>
+        <time datetime="{{.PublishedOn | UTC | ISO8601}}">{{.PublishedOn | DisplayTime}}</time>
+        &middot;
+        <span class="byline author vcard">
+            By <span class="fn">{{.Author}}</span>
+        </span>
+        &middot;
+        Posted in
+        <span class="category">
+            <a href="{{CategoryPath . | CanonicalUrl}}">{{.Category | Titleize}}</a>
+        </span>
+        &middot;
+        Tagged with
+        <span class="tags">
+            {{range .Tags}}
+                <a href="{{TagPath . | CanonicalUrl}}" rel="tag">{{.}}</a>
+            {{end}}
+        </span>
+    </div>
+    <hr>
+    <div class="content entry-content">{{.HTML}}</div>
+    <div class="clear"></div>
+    {{template "sharing.tmpl"}}
+</article>

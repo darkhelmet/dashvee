@@ -1,0 +1,25 @@
+{{`<?xml version="1.0" encoding="UTF-8"?>` | Safe}}
+<rss version="2.0">
+    <channel>
+        <title>{{.SiteTitle}}</title>
+        <link>{{CanonicalUrl "/"}}</link>
+        <description>{{.SiteDescription}}</description>
+        <language>en-us</language>
+        <managingEditor>{{.SiteContact}} ({{.SiteAuthor}})</managingEditor>
+        <webMaster>{{.SiteContact}} ({{.SiteAuthor}})</webMaster>
+        <lastBuildDate>{{with $post := index .Post 0}}{{.PublishedOn | RFC822 }}{{end}}</lastBuildDate>
+        {{range .Post}}
+            <item>
+                <title>{{.Title}}</title>
+                <category>{{.Category | Titleize}}</category>
+                <pubDate>{{.PublishedOn | RFC822 }}</pubDate>
+                <link>{{PostCanonical . | CanonicalUrl}}</link>
+                <guid>{{PostCanonical . | CanonicalUrl}}</guid>
+                <author>{{.Author}}</author>
+                <description>
+                    {{`<![CDATA[` | Safe }}{{.HTML}}]]>
+                </description>
+            </item>
+        {{end}}
+    </channel>
+</rss>

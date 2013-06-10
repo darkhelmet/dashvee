@@ -1,0 +1,12 @@
+{{range $category, $posts  := .}}
+    <section>
+        <h1><a href="{{CategoryPath $category}}">{{$category | Titleize}}</a></h1>
+        {{range $posts}}
+            <article class="main">
+                <h4 class="archive_title">
+                    <a href="{{PostCanonical . | CanonicalUrl}}" rel="bookmark">{{.Title}}</a>
+                </h4>
+            </article>
+        {{end}}
+    </section>
+{{end}}
