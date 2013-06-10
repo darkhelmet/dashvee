@@ -3,7 +3,9 @@ language: go
 branches:
     only:
         - master
-before_install: ./before_install.sh
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq bzr
 script: revel test verboselogging
 # after_success: ./deploy.sh
 env:
