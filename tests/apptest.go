@@ -37,3 +37,13 @@ func (t AppTest) TestOpenSearch() {
     t.AssertOk()
     t.AssertContentType("application/xml; charset=utf-8")
 }
+
+func (t AppTest) TestSearch() {
+    t.Get("/search?query=cucumber")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+    t.AssertContains(`Search results for &#34;cucumber&#34;`)
+    t.AssertContains("Debugging Cucumber On Rails")
+    t.AssertContains("Riding Rails With Selenium")
+    t.AssertContains("Using Ruby&#39;s Eval To Make Cucumber Bigger And Greener")
+}
