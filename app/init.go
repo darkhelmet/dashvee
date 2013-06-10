@@ -2,10 +2,10 @@ package app
 
 import (
     "crypto/md5"
-    "dashvee/app/config"
     "encoding/json"
     "fmt"
     "github.com/darkhelmet/blargh/post"
+    "github.com/darkhelmet/dashvee/app/config"
     "github.com/darkhelmet/webutil"
     "github.com/robfig/revel"
     T "html/template"

@@ -11,7 +11,7 @@ before_install:
 install:
     - go get -v github.com/robfig/revel/revel
     - export PATH=$HOME/gopath/bin:$PATH
-script: revel test dashvee
+script: revel test github.com/darkhelmet/dashvee
 # after_success: ./deploy.sh
 env:
     global:
