@@ -4,6 +4,8 @@
 
 module:testrunner
 
+GET     /favicon.ico                                        404
+
 GET     /                                                   App.Index
 GET     /opensearch.xml                                     App.OpenSearch
 GET     /search                                             App.Search
