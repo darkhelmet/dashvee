@@ -5,9 +5,6 @@ go:
 branches:
     only:
         - master
-before_install:
-    - travis_retry sudo apt-get update
-    - travis_retry sudo apt-get install bzr
 install:
     - travis_retry go get -v github.com/robfig/revel/revel
     - export PATH=$HOME/gopath/bin:$PATH
