@@ -15,4 +15,7 @@ after_success: ./deploy.sh
 env:
     global:
         - TZ: Canada/Mountain
-        - secure: LriZinLZcRTSwyK2WUNFuy/gjDwNGcmJ+c3mKHxCVUostXkiGQCUd5/9Taug2/U35TnnHpBUXLSpVZ9qgS4IFTqr/+wV9O2JSrar08tok6+5Kk2nOw5G+kJwfGq6wueB99PmiAhJ+FzHrDJwl+MEwccfDxDKpGINyU4ST8qqP50=
+        - secure: |-
+            EIaHyesoQcY7vocejHAZ/kwCOqlSHhJXVScVno2qPNgjfGevg+Jgwr8SYlhL
+            ql1+VLLde/6zGJaUubrir9rJYmMB7qOZ/5DuefPqT3r9QrRfCJWPMIB6r3Jy
+            Bno8XaxOzKfMV0R1UBiin5nHy4dJIwcyyuP5Dcj16AF2UBK6RAU=
