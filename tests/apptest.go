@@ -54,3 +54,10 @@ func (t AppTest) TestSearch() {
     t.AssertContains("Riding Rails With Selenium")
     t.AssertContains("Using Ruby&#39;s Eval To Make Cucumber Bigger And Greener")
 }
+
+func (t AppTest) TestFeed() {
+    t.Get("/feed?no_fb=true")
+    t.AssertOk()
+    t.AssertContentType("application/rss+xml; charset=utf-8")
+    t.AssertContains("<title>Verbose Logging</title>")
+}

@@ -81,7 +81,21 @@ func (c App) Search() revel.Result {
 }
 
 func (c App) Feed() revel.Result {
-    return c.RenderText("Feed")
+    if !feedburner.Match([]byte(c.Request.Header.Get("User-Agent"))) {
+        if "" == c.Params.Get("no_fb") {
+            return c.Redirect(feedburnerUrl)
+        }
+    }
+
+    posts, err := posts.FindLatest(10)
+    if err != nil {
+        revel.ERROR.Printf("failed getting posts for feed: %s", err)
+        return c.RenderError(err)
+    }
+
+    c.Response.ContentType = "application/rss+xml; charset=utf-8"
+    c.RenderArgs["posts"] = posts
+    return c.RenderTemplate("App/Feed.xml")
 }
 
 func (c App) Sitemap() revel.Result {

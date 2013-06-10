@@ -1,4 +1,4 @@
-{{`<?xml version="1.0" encoding="UTF-8"?>` | Safe}}
+{{`<?xml version="1.0" encoding="UTF-8"?>` | HTML}}
 <rss version="2.0">
     <channel>
         <title>{{.SiteTitle}}</title>
@@ -7,8 +7,8 @@
         <language>en-us</language>
         <managingEditor>{{.SiteContact}} ({{.SiteAuthor}})</managingEditor>
         <webMaster>{{.SiteContact}} ({{.SiteAuthor}})</webMaster>
-        <lastBuildDate>{{with $post := index .Post 0}}{{.PublishedOn | RFC822 }}{{end}}</lastBuildDate>
-        {{range .Post}}
+        <lastBuildDate>{{with $post := index .posts 0}}{{.PublishedOn | RFC822 }}{{end}}</lastBuildDate>
+        {{range .posts}}
             <item>
                 <title>{{.Title}}</title>
                 <category>{{.Category | Titleize}}</category>
@@ -17,7 +17,7 @@
                 <guid>{{PostCanonical . | CanonicalUrl}}</guid>
                 <author>{{.Author}}</author>
                 <description>
-                    {{`<![CDATA[` | Safe }}{{.HTML}}]]>
+                    {{`<![CDATA[` | HTML }}{{.HTML}}]]>
                 </description>
             </item>
         {{end}}
