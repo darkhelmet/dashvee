@@ -1,0 +1,15 @@
+---
+language: go
+branches:
+    only:
+        - master
+before_install: ./before_install.sh
+script: revel test verboselogging
+# after_success: ./deploy.sh
+env:
+    global:
+        - TZ: Canada/Mountain
+        - secure: |-
+            LriZinLZcRTSwyK2WUNFuy/gjDwNGcmJ+c3mKHxCVUostXkiGQCUd5/9Taug
+            2/U35TnnHpBUXLSpVZ9qgS4IFTqr/+wV9O2JSrar08tok6+5Kk2nOw5G+kJw
+            fGq6wueB99PmiAhJ+FzHrDJwl+MEwccfDxDKpGINyU4ST8qqP50=
