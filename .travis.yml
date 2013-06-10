@@ -6,8 +6,9 @@ branches:
     only:
         - master
 before_install:
-    - sudo apt-get update -qq
-    - sudo apt-get install -qq bzr
+    - travis_retry sudo apt-get update -qq
+    - travis_retry sudo apt-get install -qq bzr
+install: echo skipping install
 script: revel test verboselogging
 # after_success: ./deploy.sh
 env:
