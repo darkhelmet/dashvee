@@ -8,7 +8,9 @@ branches:
 before_install:
     - travis_retry sudo apt-get update -qq
     - travis_retry sudo apt-get install -qq bzr
-install: go get github.com/robfig/revel/revel
+install:
+    - go get -v github.com/robfig/revel/revel
+    - export PATH=$HOME/gopath/bin:$PATH
 script: revel test verboselogging
 # after_success: ./deploy.sh
 env:
