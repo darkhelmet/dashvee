@@ -26,6 +26,13 @@ func (t AppTest) TestTimeZones() {
     }
 }
 
+func (t AppTest) Test404() {
+    t.Get("/404")
+    t.AssertNotFound()
+    t.AssertContentType("text/html; charset=utf-8")
+    t.AssertContains("Every time you get a 404, a kitten cries. You should probably click on some links. If this URL was supposed to work, maybe you could let me know about it.")
+}
+
 func (t AppTest) TestIndex() {
     t.Get("/")
     t.AssertOk()

@@ -5,6 +5,7 @@ import (
     // "github.com/darkhelmet/blargh/post"
     "fmt"
     "github.com/robfig/revel"
+    static "github.com/robfig/revel/modules/static/app/controllers"
     T "html/template"
     "regexp"
 )
@@ -46,6 +47,7 @@ func defaultRenderArgs(c *revel.Controller) revel.Result {
 
 func init() {
     revel.InterceptFunc(defaultRenderArgs, revel.BEFORE, &App{})
+    revel.InterceptFunc(defaultRenderArgs, revel.BEFORE, &static.Static{})
 }
 
 type App struct {
