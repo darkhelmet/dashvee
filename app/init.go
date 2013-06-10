@@ -2,6 +2,7 @@ package app
 
 import (
     "crypto/md5"
+    "dashvee/app/config"
     "encoding/json"
     "fmt"
     "github.com/darkhelmet/blargh/post"
@@ -15,7 +16,6 @@ import (
     "time"
     "unicode"
     "unicode/utf8"
-    "verboselogging/app/config"
 )
 
 type Formatter interface {
