@@ -1,0 +1,1 @@
+(function(){(function(e){var t;return t=function(e){return e.replace(/^\s+|\s+$/g,"")},e.expr[":"].regex=e.expr.createPseudo(function(n){return function(r){var i,s,o;return o=n.split(","),i=o[0],s=o[1],s=new RegExp(t(s),"ig"),s.test(e(r).attr(i))}})})(jQuery)}).call(this);

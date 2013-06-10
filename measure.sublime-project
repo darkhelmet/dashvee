@@ -1,0 +1,14 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "folder_exclude_patterns": [
+                "tmp", "routes"
+            ],
+            "file_exclude_patterns": [
+                ".godir"
+            ]
+        }
+    ]
+}

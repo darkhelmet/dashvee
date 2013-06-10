@@ -1,0 +1,23 @@
+Retina = if window.devicePixelRatio > 1 then true else false
+Firefox = window.navigator.userAgent.match(/firefox/i)?
+Chrome = window.navigator.userAgent.match(/chrome/i)?
+ImageId = 'blur-source'
+CanvasId = 'blur'
+Radius = 50
+Headshot = document.getElementById('headshot')
+
+if Modernizr.canvas and Headshot? and (Firefox or Chrome) and not Retina
+    body = document.getElementsByTagName('body')[0]
+    img = document.createElement('img')
+    img.crossOrigin = ''
+    img.src = headshot.value
+    img.id = ImageId
+    img.onload = ->
+        canvas = document.createElement('canvas')
+        canvas.id = CanvasId
+        body.appendChild(canvas)
+        try
+            stackBlurImage(ImageId, CanvasId, Radius, false)
+        catch e
+
+    body.appendChild(img)
