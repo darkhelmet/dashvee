@@ -6,12 +6,12 @@ branches:
     only:
         - master
 before_install:
-    - travis_retry sudo apt-get update -qq
-    - travis_retry sudo apt-get install -qq bzr
+    - travis_retry sudo apt-get update
+    - travis_retry sudo apt-get install bzr
 install:
     - go get -v github.com/robfig/revel/revel
     - export PATH=$HOME/gopath/bin:$PATH
-script: revel test verboselogging
+script: revel test dashvee
 # after_success: ./deploy.sh
 env:
     global:
