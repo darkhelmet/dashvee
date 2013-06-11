@@ -68,16 +68,6 @@ func PageCanonical(p *post.Post) string {
     return "/" + p.Slug()
 }
 
-// type RenderInfo struct {
-//     Page                                               interface{}
-//     Title, PageTitle, Description, Canonical, Gravatar string
-//     Error, NotFound, ArchiveLinks                      bool
-
-//     SiteTitle, SiteDescription, SiteContact, SiteAuthor             string
-//     PageLinks                                                       []PageLink
-//     PostPreview, Post, FullArchive, CategoryArchive, MonthlyArchive interface{}
-// }
-
 func setupAssets() {
     data, err := ioutil.ReadFile("public/assets/manifest.json")
     if err != nil {
@@ -141,22 +131,3 @@ func init() {
 
     setupAssets()
 }
-
-// func RenderLayout(w io.Writer, data *RenderInfo) {
-//     data.SiteTitle = config.SiteTitle
-//     data.SiteDescription = config.SiteDescription
-//     data.SiteContact = config.SiteContact
-//     data.SiteAuthor = config.SiteAuthor
-//     data.PageLinks = pageLinks
-//     err := templates.ExecuteTemplate(w, "layout.tmpl", data)
-//     if err != nil {
-//         logger.Printf("error rendering template: %s", err)
-//     }
-// }
-
-// func RenderPartial(w io.Writer, name string, data interface{}) {
-//     err := templates.ExecuteTemplate(w, name, data)
-//     if err != nil {
-//         logger.Printf("error rendering partial: %s", err)
-//     }
-// }
