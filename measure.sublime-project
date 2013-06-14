@@ -4,7 +4,7 @@
         {
             "path": ".",
             "folder_exclude_patterns": [
-                "routes"
+                "tmp", "routes"
             ],
             "file_exclude_patterns": [
                 ".godir"

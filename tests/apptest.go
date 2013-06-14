@@ -69,3 +69,21 @@ func (t AppTest) TestSitemap() {
     t.AssertContains("/disclaimer")
     t.AssertContains("/worth-watching-twice-joel-spolsky-railsconf-08-keynote")
 }
+
+func (t AppTest) TestFullArchive() {
+    t.Get("/archive/full")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+}
+
+func (t AppTest) TestCategoryArchive() {
+    t.Get("/archive/category")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+}
+
+func (t AppTest) TestMonthlyArchive() {
+    t.Get("/archive/month")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+}

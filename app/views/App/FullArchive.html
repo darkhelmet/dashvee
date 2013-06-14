@@ -1,3 +1,5 @@
+{{template "before.html" .}}
+{{range .posts}}
 <article class="main">
     <h4 class="archive_title">
         <a href="{{PostCanonical . | CanonicalUrl}}" rel="bookmark">{{.Title}}</a>
@@ -5,3 +7,6 @@
     &raquo;
     <time datetime="{{.PublishedOn | UTC | ISO8601}}">{{.PublishedOn | DisplayTime}}</time>
 </article>
+{{end}}
+{{template "App/archive_links.html" .}}
+{{template "after.html" .}}

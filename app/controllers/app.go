@@ -118,7 +118,16 @@ func (c App) Sitemap() revel.Result {
 }
 
 func (c App) FullArchive() revel.Result {
-    return c.RenderText("FullArchive")
+    posts, err := posts.FindLatest(posts.Len())
+    if err != nil {
+        revel.ERROR.Printf("failed getting posts for full archive: %s", err)
+        return c.RenderError(err)
+    }
+
+    title := "Full Archive"
+    description := title
+    canonical := c.Request.URL.Path
+    return c.Render(title, canonical, description, posts)
 }
 
 func (c App) CategoryArchive() revel.Result {
