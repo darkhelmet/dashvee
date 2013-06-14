@@ -1,6 +1,7 @@
 package controllers
 
 import (
+    "time"
     // "github.com/darkhelmet/blargh/errors"
     "fmt"
     "github.com/darkhelmet/blargh/post"
@@ -149,7 +150,22 @@ func (c App) CategoryArchive() revel.Result {
 }
 
 func (c App) MonthlyArchive() revel.Result {
-    return c.RenderText("MonthlyArchive")
+    posts, err := posts.FindLatest(posts.Len())
+    if err != nil {
+        revel.ERROR.Printf("failed getting posts for monthly archive: %s", err)
+        return c.RenderError(err)
+    }
+    grouped := make(map[int64][]*post.Post)
+    for _, post := range posts {
+        t := post.PublishedOn
+        key := -time.Date(t.Year(), t.Month(), 1, 0, 0, 0, 0, time.Local).Unix()
+        grouped[key] = append(grouped[key], post)
+    }
+
+    title := "Monthly Archive"
+    description := "Archives by month"
+    canonical := c.Request.URL.Path
+    return c.Render(title, canonical, description, grouped)
 }
 
 func (c App) Monthly(year, month int) revel.Result {

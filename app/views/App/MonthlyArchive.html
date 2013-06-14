@@ -1,4 +1,5 @@
-{{range $time, $posts  := .}}
+{{template "before.html" .}}
+{{range $time, $posts  := .grouped}}
     {{$month := Time $time}}
     <section>
         <h1><a href="{{MonthlyPath $month}}">{{$month.Format "January 2006"}}</a></h1>
@@ -11,3 +12,5 @@
         {{end}}
     </section>
 {{end}}
+{{template "App/archive_links.html" .}}
+{{template "after.html" .}}
