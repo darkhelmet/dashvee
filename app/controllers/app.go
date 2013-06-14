@@ -169,7 +169,16 @@ func (c App) MonthlyArchive() revel.Result {
 }
 
 func (c App) Monthly(year, month int) revel.Result {
-    return c.RenderText("Monthly: %d, %d", year, month)
+    posts, err := posts.FindByMonth(year, time.Month(month))
+    if err != nil {
+        revel.ERROR.Printf("failed finding posts in month %#v of %#v: %s", month, year, err)
+        return c.RenderError(err)
+    }
+
+    title := fmt.Sprintf("Archives for %d/%d", month, year)
+    description := title
+    canonical := c.Request.URL.Path
+    return c.Render(posts, title, description, canonical)
 }
 
 func (c App) Category(category string) revel.Result {

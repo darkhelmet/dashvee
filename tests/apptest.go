@@ -87,3 +87,10 @@ func (t AppTest) TestMonthlyArchive() {
     t.AssertOk()
     t.AssertContentType("text/html")
 }
+
+func (t AppTest) TestMonthly() {
+    t.Get("/2013/05")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+    t.AssertContains("Archives for 5/2013")
+}
