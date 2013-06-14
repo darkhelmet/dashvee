@@ -26,11 +26,15 @@ func (t AppTest) TestTimeZones() {
     }
 }
 
+func (t AppTest) assertNotFound() {
+    t.AssertNotFound()
+    t.AssertContentType("text/html; charset=utf-8")
+    t.AssertContains("Every time you get a 404, a kitten cries. You should probably click on some links. If this URL was supposed to work, maybe you could let me know about it.")
+}
+
 func (t AppTest) Test404() {
     t.Get("/foo/bar/baz")
-    t.AssertNotFound()
-    t.AssertContentType("text/html; charset=utf-8") // Fails on travis wtf
-    t.AssertContains("Every time you get a 404, a kitten cries. You should probably click on some links. If this URL was supposed to work, maybe you could let me know about it.")
+    t.assertNotFound()
 }
 
 func (t AppTest) TestIndex() {
@@ -110,10 +114,27 @@ func (t AppTest) TestPermalink() {
     t.AssertContains("Salt Lake City, Utah")
 }
 
+func (t AppTest) TestNotFoundPermalink() {
+    t.Get("/1999/05/01/batman")
+    t.assertNotFound()
+}
+
 func (t AppTest) TestTag() {
     t.Get("/tag/ruby")
     t.AssertOk()
     t.AssertContentType("text/html")
     t.AssertContains(`Articles tagged with &#34;ruby&#34;`)
     t.AssertContains("Ruby Batteries Included")
+}
+
+func (t AppTest) TestPage() {
+    t.Get("/about")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+    t.AssertContains("I am a software engineer")
+}
+
+func (t AppTest) TestNotFoundPage() {
+    t.Get("/cobol")
+    t.assertNotFound()
 }

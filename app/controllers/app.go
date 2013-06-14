@@ -225,5 +225,18 @@ func (c App) Tag(tag string) revel.Result {
 }
 
 func (c App) Page(slug string) revel.Result {
-    return c.RenderText("Page: %s", slug)
+    page, err := pages.FindBySlug(slug)
+    if err != nil {
+        switch err.(type) {
+        case errors.NotFound:
+            return c.NotFound("")
+        default:
+            revel.ERROR.Printf("failed finding page with slug %#v: %s (%T)", slug, err, err)
+            return c.RenderError(err)
+        }
+    }
+
+    title := page.Title
+    description := page.Description
+    return c.Render(page, title, description)
 }

@@ -1,0 +1,4 @@
+{{PageCanonical .page | set . "canonical"}}
+{{template "before.html" .}}
+<div class="page content">{{.page.HTML}}</div>
+{{template "after.html" .}}
