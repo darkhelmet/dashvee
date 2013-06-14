@@ -213,7 +213,15 @@ func (c App) Permalink(year, month, day int, slug string) revel.Result {
 }
 
 func (c App) Tag(tag string) revel.Result {
-    return c.RenderText("Tag: %s", tag)
+    posts, err := posts.FindByTag(tag)
+    if err != nil {
+        revel.ERROR.Printf("failed finding posts with tag %#v: %s", tag, err)
+        return c.RenderError(err)
+    }
+    title := fmt.Sprintf("Articles tagged with %#v", tag)
+    description := fmt.Sprintf("Articles with the %#v tag", tag)
+    canonical := c.Request.URL.Path
+    return c.Render(posts, title, description, canonical)
 }
 
 func (c App) Page(slug string) revel.Result {

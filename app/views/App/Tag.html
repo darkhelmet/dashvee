@@ -1,0 +1,5 @@
+{{template "before.html" .}}
+<h1>{{.title}}</h1>
+{{range .posts}}{{template "post_preview.html" .}}{{end}}
+{{template "App/archive_links.html" .}}
+{{template "after.html" .}}

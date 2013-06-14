@@ -109,3 +109,11 @@ func (t AppTest) TestPermalink() {
     t.AssertContains("Ruby Batteries Included")
     t.AssertContains("Salt Lake City, Utah")
 }
+
+func (t AppTest) TestTag() {
+    t.Get("/tag/ruby")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+    t.AssertContains(`Articles tagged with &#34;ruby&#34;`)
+    t.AssertContains("Ruby Batteries Included")
+}
