@@ -1,14 +1,15 @@
 package controllers
 
 import (
-    "time"
-    // "github.com/darkhelmet/blargh/errors"
     "fmt"
+    "github.com/darkhelmet/blargh/errors"
     "github.com/darkhelmet/blargh/post"
     "github.com/robfig/revel"
     static "github.com/robfig/revel/modules/static/app/controllers"
     T "html/template"
     "regexp"
+    "strings"
+    "time"
 )
 
 type PageLink struct {
@@ -182,11 +183,33 @@ func (c App) Monthly(year, month int) revel.Result {
 }
 
 func (c App) Category(category string) revel.Result {
-    return c.RenderText("Category: %s", category)
+    posts, err := posts.FindByCategory(category)
+    if err != nil {
+        revel.ERROR.Printf("failed finding posts with category %#v: %s", category, err)
+        return c.RenderError(err)
+    }
+    category = strings.Title(category)
+    title := fmt.Sprintf("%s Articles", category)
+    description := fmt.Sprintf("Articles in the %s category", category)
+    canonical := c.Request.URL.Path
+    return c.Render(posts, title, description, canonical)
 }
 
 func (c App) Permalink(year, month, day int, slug string) revel.Result {
-    return c.RenderText("Permalink: %d, %d, %d, %s", year, month, day, slug)
+    post, err := posts.FindByPermalink(year, time.Month(month), day, slug)
+    if err != nil {
+        switch err.(type) {
+        case errors.NotFound:
+            return c.NotFound("")
+        default:
+            revel.ERROR.Printf("failed finding post with year(%#v) month(%#v) day(%#v) slug(%#v): %s (%T)", year, month, day, slug, err, err)
+            return c.RenderError(err)
+        }
+    }
+
+    title := post.Title
+    description := post.Description
+    return c.Render(post, title, description)
 }
 
 func (c App) Tag(tag string) revel.Result {

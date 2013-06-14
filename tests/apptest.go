@@ -94,3 +94,18 @@ func (t AppTest) TestMonthly() {
     t.AssertContentType("text/html")
     t.AssertContains("Archives for 5/2013")
 }
+
+func (t AppTest) TestCategory() {
+    t.Get("/category/editorial")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+    t.AssertContains("Editorial Articles")
+}
+
+func (t AppTest) TestPermalink() {
+    t.Get("/2013/05/01/ruby-batteries-included")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+    t.AssertContains("Ruby Batteries Included")
+    t.AssertContains("Salt Lake City, Utah")
+}
