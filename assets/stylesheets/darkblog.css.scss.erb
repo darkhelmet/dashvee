@@ -210,11 +210,17 @@ img {
 
 header {
   h1, nav, #tagline {
-    margin: 10px;
+    margin: 15px;
   }
 
   h1 {
     @include droid-mono;
+
+    a {
+      &:hover {
+        border-bottom: none;
+      }
+    }
   }
 
   nav {
@@ -230,6 +236,10 @@ header {
     }
   }
 
+  #where {
+    padding-top: 1em;
+  }
+
   padding: {
     top: 0px;
     bottom: 10px;
@@ -237,6 +247,24 @@ header {
 
   text-align: center;
   width: 100%;
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 7em;
+    }
+
+    #tagline {
+      font-size: 2em;
+    }
+
+    nav {
+      font-size: 1.25em;
+    }
+
+    #where {
+      font-size: 1.25em;
+    }
+  }
 }
 
 #content {
@@ -325,6 +353,12 @@ header {
 
   max-width: 640px;
   margin: 0px auto;
+}
+
+@media screen and (min-width: 800px) {
+  #content {
+    font-size: 115%;
+  }
 }
 
 .touch {
