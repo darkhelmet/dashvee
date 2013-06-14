@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'sprockets', '~> 2.4.5'
 gem 'coffee-script', '~> 2.2.0'
