@@ -138,3 +138,10 @@ func (t AppTest) TestNotFoundPage() {
     t.Get("/cobol")
     t.assertNotFound()
 }
+
+func (t AppTest) TestProgrammingJournals() {
+    t.Get("/2012/09/03/on-programming-journals")
+    t.AssertOk()
+    t.AssertContentType("text/html")
+    t.AssertContains("On Programming Journals")
+}
