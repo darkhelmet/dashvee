@@ -4,7 +4,23 @@
 
 module:testrunner
 
-GET     /favicon.ico                                        404
+GET     /2w6wdfk.html   Static.Serve("public","2w6wdfk.html")
+GET     /BingSiteAuth.xml   Static.Serve("public","BingSiteAuth.xml")
+GET     /favicon.ico    Static.Serve("public","favicon.ico")
+GET     /img/backgrounds.gif    Static.Serve("public","img/backgrounds.gif")
+GET     /img/buttons-disabled.png   Static.Serve("public","img/buttons-disabled.png")
+GET     /img/buttons.png    Static.Serve("public","img/buttons.png")
+GET     /img/delete.gif Static.Serve("public","img/delete.gif")
+GET     /img/done.gif   Static.Serve("public","img/done.gif")
+GET     /img/error.gif  Static.Serve("public","img/error.gif")
+GET     /img/throbber.gif   Static.Serve("public","img/throbber.gif")
+GET     /img/transp50.png   Static.Serve("public","img/transp50.png")
+GET     /robots.txt Static.Serve("public","robots.txt")
+GET     /sitemap.xsl    Static.Serve("public","sitemap.xsl")
+GET     /swf/expressInstall.swf Static.Serve("public","swf/expressInstall.swf")
+GET     /swf/flowplayer.controls.swf    Static.Serve("public","swf/flowplayer.controls.swf")
+GET     /swf/flowplayer.swf Static.Serve("public","swf/flowplayer.swf")
+GET     /y_key_0f35e6e63807bccd.html    Static.Serve("public","y_key_0f35e6e63807bccd.html")
 
 GET     /                                                   App.Index
 GET     /opensearch.xml                                     App.OpenSearch
@@ -15,9 +31,9 @@ GET     /sitemap.xml.gz                                     App.Sitemap
 GET     /archive/full                                       App.FullArchive
 GET     /archive/category                                   App.CategoryArchive
 GET     /archive/month                                      App.MonthlyArchive
-GET     /{<\d{4}>year}/{<\d{2}>month}                       App.Monthly
-GET     /category/{category}                                App.Category
-GET     /{<\d{4}>year}/{<\d{2}>month}/{<\d{2}>day}/{slug}   App.Permalink
-GET     /tag/{tag}                                          App.Tag
-GET     /{<about|contact|disclaimer|projects|talks>slug}    App.Page
-GET     /{<.+>filepath}                                     Static.Serve("public")
+GET     /category/:category                                 App.Category
+GET     /tag/:tag                                           App.Tag
+GET     /:year/:month                                       App.Monthly
+GET     /:year/:month/:day/:slug                            App.Permalink
+GET     /:slug                                              App.Page
+GET     /*filepath                                          Static.Serve("public")

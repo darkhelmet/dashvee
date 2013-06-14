@@ -10,8 +10,8 @@ import (
     "github.com/robfig/revel"
     T "html/template"
     "io"
-    "io/ioutil"
     "log"
+    "os"
     "strings"
     "time"
     "unicode"
@@ -26,11 +26,31 @@ type TimeZoner interface {
     In(*time.Location) time.Time
 }
 
-var assets = make(map[string]string)
-
-func assetPath(name string) string {
-    return fmt.Sprintf("%s/assets/%s", config.AssetHost, assets[name])
+type Manifest struct {
+    Assets map[string]string
 }
+
+func (m Manifest) path(format string, rest ...interface{}) string {
+    return fmt.Sprintf("%s/assets/%s", config.AssetHost, m.Assets[fmt.Sprintf(format, rest...)])
+}
+
+func (m Manifest) StylesheetPath(name string) string {
+    return m.path("stylesheets/%s.css", name)
+}
+
+func (m Manifest) JavascriptPath(name string) string {
+    return m.path("javascripts/%s.js", name)
+}
+
+func (m Manifest) ImagePath(name string) string {
+    return m.path("images/%s", name)
+}
+
+func (m Manifest) Len() int {
+    return len(m.Assets)
+}
+
+var assets = Manifest{make(map[string]string)}
 
 func gravatar(email string) string {
     email = strings.TrimFunc(email, unicode.IsSpace)
@@ -69,18 +89,14 @@ func PageCanonical(p *post.Post) string {
 }
 
 func setupAssets() {
-    data, err := ioutil.ReadFile("public/assets/manifest.json")
+    file, err := os.Open("public/assets/manifest.json")
     if err != nil {
-        log.Fatalf("failed to read asset manifest file: %s", err)
+        log.Fatalf("failed opening manifest file: %s", err)
     }
-    manifest := make(map[string]interface{})
-    err = json.Unmarshal(data, &manifest)
+    defer file.Close()
+    err = json.NewDecoder(file).Decode(&assets)
     if err != nil {
-        log.Fatalf("failed parsing manifest file: %s", err)
-    }
-    pairs := manifest["assets"].(map[string]interface{})
-    for key, path := range pairs {
-        assets[key] = path.(string)
+        log.Fatalf("failed decoding manifest file: %s", err)
     }
 }
 
@@ -90,7 +106,6 @@ func init() {
         revel.PanicFilter,       // Recover from panics and display an error page instead.
         revel.RouterFilter,      // Use the routing table to select the right Action
         revel.ParamsFilter,      // Parse parameters into Controller.Params.
-        revel.I18nFilter,        // Resolve the requested language
         revel.InterceptorFilter, // Run interceptors around the action.
         revel.ActionInvoker,     // Invoke the action.
     }
@@ -111,10 +126,9 @@ func init() {
     revel.TemplateFuncs["HTML"] = revel.TemplateFuncs["Safe"]
     revel.TemplateFuncs["HTMLAttr"] = func(s string) T.HTMLAttr { return T.HTMLAttr(s) }
 
-    revel.TemplateFuncs["AssetPath"] = assetPath
-    revel.TemplateFuncs["StylesheetPath"] = func(name string) string { return assetPath(fmt.Sprintf("stylesheets/%s.css", name)) }
-    revel.TemplateFuncs["JavascriptPath"] = func(name string) string { return assetPath(fmt.Sprintf("javascripts/%s.js", name)) }
-    revel.TemplateFuncs["ImagePath"] = func(name string) string { return assetPath(fmt.Sprintf("images/%s", name)) }
+    revel.TemplateFuncs["StylesheetPath"] = assets.StylesheetPath
+    revel.TemplateFuncs["JavascriptPath"] = assets.JavascriptPath
+    revel.TemplateFuncs["ImagePath"] = assets.ImagePath
 
     revel.TemplateFuncs["ISO8601"] = func(t Formatter) string { return t.Format(time.RFC3339) }
     revel.TemplateFuncs["RFC822"] = func(t Formatter) string { return t.Format(time.RFC822) }

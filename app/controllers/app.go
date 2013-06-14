@@ -129,22 +129,22 @@ func (c App) MonthlyArchive() revel.Result {
     return c.RenderText("MonthlyArchive")
 }
 
-func (c App) Monthly() revel.Result {
-    return c.RenderText("Monthly")
+func (c App) Monthly(year, month int) revel.Result {
+    return c.RenderText("Monthly: %d, %d", year, month)
 }
 
-func (c App) Category() revel.Result {
-    return c.RenderText("Category")
+func (c App) Category(category string) revel.Result {
+    return c.RenderText("Category: %s", category)
 }
 
-func (c App) Permalink() revel.Result {
-    return c.RenderText("Permalink")
+func (c App) Permalink(year, month, day int, slug string) revel.Result {
+    return c.RenderText("Permalink: %d, %d, %d, %s", year, month, day, slug)
 }
 
-func (c App) Tag() revel.Result {
-    return c.RenderText("Tag")
+func (c App) Tag(tag string) revel.Result {
+    return c.RenderText("Tag: %s", tag)
 }
 
 func (c App) Page(slug string) revel.Result {
-    return c.RenderText(slug)
+    return c.RenderText("Page: %s", slug)
 }
