@@ -1,4 +1,5 @@
-{{range $category, $posts  := .}}
+{{template "before.html" .}}
+{{range $category, $posts  := .grouped}}
     <section>
         <h1><a href="{{CategoryPath $category}}">{{$category | Titleize}}</a></h1>
         {{range $posts}}
@@ -10,3 +11,5 @@
         {{end}}
     </section>
 {{end}}
+{{template "App/archive_links.html" .}}
+{{template "after.html" .}}

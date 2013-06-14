@@ -2,8 +2,8 @@ package controllers
 
 import (
     // "github.com/darkhelmet/blargh/errors"
-    // "github.com/darkhelmet/blargh/post"
     "fmt"
+    "github.com/darkhelmet/blargh/post"
     "github.com/robfig/revel"
     static "github.com/robfig/revel/modules/static/app/controllers"
     T "html/template"
@@ -131,7 +131,21 @@ func (c App) FullArchive() revel.Result {
 }
 
 func (c App) CategoryArchive() revel.Result {
-    return c.RenderText("CategoryArchive")
+    posts, err := posts.FindLatest(posts.Len())
+    if err != nil {
+        revel.ERROR.Printf("failed getting posts for category archive: %s", err)
+        return c.RenderError(err)
+    }
+    grouped := make(map[string][]*post.Post)
+    for _, post := range posts {
+        key := post.Category
+        grouped[key] = append(grouped[key], post)
+    }
+
+    title := "Category Archive"
+    description := "Archives by category"
+    canonical := c.Request.URL.Path
+    return c.Render(title, canonical, description, grouped)
 }
 
 func (c App) MonthlyArchive() revel.Result {
