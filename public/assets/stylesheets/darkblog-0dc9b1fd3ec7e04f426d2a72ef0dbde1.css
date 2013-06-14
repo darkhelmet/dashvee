@@ -168,6 +168,7 @@ header {
       font-size: 1.25em; } }
 
 #content {
+  line-height: 2em;
   max-width: 640px;
   margin: 0px auto; }
   #content article.main {
