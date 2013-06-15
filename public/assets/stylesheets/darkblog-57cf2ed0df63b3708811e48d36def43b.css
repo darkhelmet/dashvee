@@ -157,6 +157,8 @@ header {
       margin: 0px 10px; }
   header #where {
     padding-top: 1em; }
+    header #where a:hover {
+      border-bottom: none; }
   @media screen and (min-width: 800px) {
     header h1 {
       font-size: 7em; }
