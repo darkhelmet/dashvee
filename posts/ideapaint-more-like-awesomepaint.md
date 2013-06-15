@@ -2,7 +2,7 @@
 id: 431
 author: Daniel Huckstep
 title: IdeaPaint, More Like AwesomePaint!
-category: technology
+category: editorial
 description: IdeaPaint is awesome. Do I need more of a reason?
 published: true
 publishedon: 17 Dec 2009 13:21 MST

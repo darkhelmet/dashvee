@@ -2,7 +2,7 @@
 id: 423
 author: Daniel Huckstep
 title: Mockups And Me, A Balsamiq Review
-category: review
+category: editorial
 description: I review Balsamiq Mockups.
 published: true
 publishedon: 18 Nov 2009 08:00 MST
