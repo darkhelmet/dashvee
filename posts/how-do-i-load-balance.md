@@ -20,7 +20,7 @@ We need our data in country, so we have some physical servers (Dell R510's if me
 
 The front-end servers are load balanced behind a pair of firewalls configured in high availability. These firewalls can do simple load balancing. Great, right?
 
-We did some load testing to confirm our new setup would fare. We used Neustar to spin up 1500 users writing exams to see what happened.
+We did some load testing to confirm our new setup would fare. We used [Neustar](http://www.neustar.biz/enterprise/web-performance/what-is-load-testing#.Uby0sPZAQb4) to spin up 1500 users writing exams to see what happened.
 
 ## Oh shit everything's breaking
 
@@ -48,17 +48,17 @@ How does that even work? Let's find out.
 
 ## Three Musketeers, err, packets
 
-As I said, the firewall does TCP load balancing. What's a TCP packet? Well it's a header and some data. The header has **source and destination ports**, flags, sequence numbers etc. The data is your HTTP request/response.
+As I said, the firewall does TCP load balancing. What's a [TCP packet](http://en.wikipedia.org/wiki/TCP_packet#TCP_segment_structure)? Well it's a header and some data. The header has **source and destination ports**, flags, sequence numbers etc. The data is your HTTP request/response.
 
-But where does IP come in? An IP packet wraps a TCP packet. It also has a header and some data. It's header has all sorts of fun things too, the important parts being the **source and destination IP addresses**.
+But where does IP come in? An [IP packet](http://en.wikipedia.org/wiki/IP_packet) wraps a TCP packet. It also has a header and some data. It's header has all sorts of fun things too, the important parts being the **source and destination IP addresses**.
 
-But things talk over ethernet, right? So what about the ethernet frame? The ethernet frame holds the IP packet. It has things like the **source and destination MAC addresses**.
+But things talk over ethernet, right? So what about the [ethernet frame](http://en.wikipedia.org/wiki/Ethernet_frame)? The ethernet frame holds the IP packet. It has things like the **source and destination MAC addresses**.
 
 ## Cool story bro
 
 So why do we care about all this? These are all things we can use to identify where a packet came from and where it needs to go. Therefore, these are all things a load balancer can use to figure out how to, umm, balance load.
 
-Sort of.
+*Sort of.*
 
 If the load balancer is just routing TCP packets, it needs to make sure all packets from a single client go to the same backend host. It's not analyzing the HTTP request (like HAProxy in `http` mode would), and a single HTTP request can be made up of multiple TCP packets.
 
@@ -94,17 +94,17 @@ Well, it should still work just fine. NAT rewrites the source IP and port of out
 
 ## All done…?
 
-That pretty much explains TCP load balancing, route packets based on the source IP and port. The browser opens a couple connections to the server, and those connections (not requests made on the connection) get balanced. Multiple HTTP requests go on each connection.
+That pretty much explains TCP load balancing: route packets based on the source IP and port. The browser opens a couple connections to the server, and those connections (not requests made on the connection) get balanced. Multiple HTTP requests go on each connection.
 
 So how does that explain the poor balancing we saw during the real exam compared to the load testing? I don't really know.
 
-At first I was thinking it was because the only piece of usable information was the source IP address. I had it in my head that the source port couldn't be trusted, due to NAT. Working it all out in my head, learning more about NAT, and thinking logically about it means the source port is fine to use. In fact, it's sort of required.
+Initially I thought it was because the only piece of usable information was the source IP address. I had it in my head that the source port couldn't be trusted, due to NAT. Working it all out in my head, learning more about NAT, and thinking logically about it means the source port is fine to use. In fact, it's sort of required.
 
-Now the load test is quite predictable. Our script logs in, starts the exam, answers each question twice with a random answer, with random pause times in between, and moves on through the questions.
+The load test is quite predictable. Our script logs in, starts the exam, answers each question twice with a random answer, with random pause times in between, and moves on through the questions.
 
 Real users aren't quite as predictable. They could be clicking around between the questions a lot, answering questions multiple times quickly, etc.
 
-The browser used by the load test, driven by Selenium, was Firefox, running on Ubuntu. The real browser used by candidates was a custom Locked Down Browser on various installs of Windows that uses the IE engine.
+The browser used by the load test, driven by Selenium, was Firefox running on Ubuntu. The real browser used by candidates was a custom Locked Down Browser on various installs of Windows that uses the IE engine.
 
 So we have a different pattern of usage, and a different technology stack on the client. Not exactly an apples to apples comparison.
 
