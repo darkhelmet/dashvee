@@ -119,9 +119,17 @@ In fact, the firewall itself is doing NAT. It has the public IP on one end, and 
 
 That pretty much explains TCP load balancing: pick a backend server when the connection is established and then route subsequent packets based on the source IP and port to the server you picked earlier (simple lookup table).
 
-The browser opens a couple connections to the server, and those connections (not requests made on the connection) get balanced. Multiple HTTP requests go on each connection.
+It's actually so simple to implement in userland that the [balance](http://www.inlab.de/balance.html) program does it in less than 1800 lines of C, and it does a bunch of stuff that's above and beyond basic TCP load balancing.
 
-So how does that explain the poor balancing we saw during the real exam compared to the load testing? I can't really say for sure.
+Here's my (basic) solution in Go:
+
+<script src="https://gist.github.com/darkhelmet/5790838.js"></script>
+
+## In the browser, and fin
+
+So the web browser opens a couple connections to the server, and those connections (not requests made on the connection) get balanced. Multiple HTTP requests go on each connection.
+
+How does that explain the poor balancing we saw during the real exam compared to the load testing? I can't really say for sure.
 
 The load test is quite predictable. Our script logs in, starts the exam, answers each question twice with a random answer, with random pause times in between, and moves on through the questions.
 
