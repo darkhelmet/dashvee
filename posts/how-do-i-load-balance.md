@@ -13,6 +13,17 @@ tags:
     - load-balancing
     - performance
     - scaling
+images:
+        nuke_it:
+                small: http://res.cloudinary.com/verboselogging/image/upload/t_small/nuke-it-from-orbit.jpg
+                medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/nuke-it-from-orbit.jpg
+                large: http://res.cloudinary.com/verboselogging/image/upload/t_large/nuke-it-from-orbit.jpg
+                original: http://res.cloudinary.com/verboselogging/image/upload/nuke-it-from-orbit.jpg
+        fuck_yeah:
+                small: http://res.cloudinary.com/verboselogging/image/upload/t_small/fuck-yeah.jpg
+                medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/fuck-yeah.jpg
+                large: http://res.cloudinary.com/verboselogging/image/upload/t_large/fuck-yeah.jpg
+                original: http://res.cloudinary.com/verboselogging/image/upload/fuck-yeah.jpg
 ---
 Recently at Yardstick, I completely rebuilt the server infrastructure for our high stakes online testing platform, Yardstick Measure.
 
@@ -22,15 +33,19 @@ The front-end servers are load balanced behind a pair of firewalls configured in
 
 We did some load testing to see how our new setup would fare. We used [Neustar](http://www.neustar.biz/enterprise/web-performance/what-is-load-testing#.Uby0sPZAQb4) to spin up 1500 users writing exams to see what happened.
 
-## Oh shit everything's breaking
+## Nuke it from orbit
 
-First, at about the 900 user mark, we brought down by the actual firewalls as we hit the connection limit that our license allowed. They were a little misconfigured, as they weren't releasing dead/idle connections when they should have been.
+<img src="{{.nuke_it.medium}}" class="fright bleft bbottom medium" />
+
+First, at about the 900 user mark, we brought down by the actual firewalls as we hit the connection limit that our license allowed. They were also a little misconfigured, as they weren't releasing dead/idle connections when they should have been.
 
 This brought both Yardstick Measure and our T2 platform down for about **two hours**. We had to actually go down to the data centre and physically restart things.
 
 We talked to the hardware vendor and we ended up getting a free software license upgrade to unlock the full potential of the hardware, with the understanding that we will buy new hardware. The ones we have are a little old, so we're getting a deal to upgrade the hardware (which is already at the office).
 
 ## Awe yeah
+
+<img src="{{.fuck_yeah.medium}}" class="fright bleft bbottom medium" />
 
 Once we upgraded our firewall licenses and fixed our settings we performed another load test. This went much better. The only errors we saw the entire time were a few random Selenium errors that come from Selenium being drunk. We went up to the full 1500 users and all of the servers performed admirably.
 
@@ -48,21 +63,23 @@ How does that even work?
 
 ## Three Musketeers, err, packets
 
-As I said, the firewall does TCP load balancing. What's a [TCP packet](http://en.wikipedia.org/wiki/TCP_packet#TCP_segment_structure)? Well it's a header and some data. The header has **source and destination ports**, flags, sequence numbers etc. The data is your HTTP request/response.
+First of all, what even is a [TCP packet](http://en.wikipedia.org/wiki/TCP_packet#TCP_segment_structure)? Well it's a header and some data. The header has **source and destination ports**, flags, sequence numbers etc. The data is your HTTP request/response.
 
-But where does IP come in? An [IP packet](http://en.wikipedia.org/wiki/IP_packet) wraps a TCP packet. It also has a header and some data. It's header has all sorts of fun things too, the important parts being the **source and destination IP addresses**.
+What about the IP part of TCP/IP? It's [another layer down](http://en.wikipedia.org/wiki/OSI_model). An [IP packet](http://en.wikipedia.org/wiki/IP_packet) wraps a TCP packet. It also has a header and some data. It's header has all sorts of fun things too, the important parts being the **source and destination IP addresses**.
 
 But things talk over ethernet, right? So what about the [ethernet frame](http://en.wikipedia.org/wiki/Ethernet_frame)? The ethernet frame holds the IP packet. It has things like the **source and destination MAC addresses**.
 
 ## Cool story bro
 
-So why do we care about all this? These are all things we can use to identify where a packet came from and where it needs to go. Therefore, these are all things a load balancer can use to figure out how to, umm, balance load.
+So why do we care about all this?
+
+These are all things we can use to identify where a packet came from and where it needs to go. Therefore, these are all things a load balancer can use to figure out how to, umm, balance load.
 
 *Sort of.*
 
-TCP is a connection based protocol. HTTP is a request/response based protocol. The browser opens a connection to the server, and can send multiple HTTP requests over that connection. This means the firewalls load balance the connections, not the HTTP requests.
+TCP is a connection based protocol. HTTP is a request/response based protocol. The browser opens a connection to the server, and can send multiple HTTP requests over that connection. This means the firewall load balances the connections, not the HTTP requests.
 
-When a new connection is established, the firewall picks the next server in the round robin order, and all packets on that connection go to that server. It makes note of where the connection is going, and can route the TCP packets to the correct server. The load balancing part of things happens when the connection is made. Once that's done, it's just directing packets.
+When a new connection is established, the firewall picks the next server in the round robin order, and all packets on that connection go to that server. It makes note of where the connection is going, and can then merrily route the TCP packets to the correct server. The load balancing part of things happens when the connection is made. Once that's done, it's just directing packets.
 
 So if the load balancer is just routing TCP packets, how does it do that? How does it remember a connection?
 
@@ -70,7 +87,7 @@ Looking back at the 3 packets, we have all the information we need.
 
 ## MAC addresses
 
-The "source" MAC address is actually useless to identify a connection. It only represents the network node that the frame just came from, not the original computer the request originated from. This means it's the MAC address of the upstream router at the data centre, owned by the ISP or something like that. It's basically just the next hop. Network switches use MAC addresses to figure out where packets need to go, but only in their localized world. So that's useless.
+The source MAC address is actually useless to identify a connection. It only represents the network node that the frame just came from, not the original computer the request originated from. All the packets coming into the firewall probably have the same source MAC address, which that of the upstream router at the data centre. It's basically just the next hop. Network switches use MAC addresses to figure out where packets need to go, but only in their localized world. So that's useless.
 
 The destination MAC address, is that of the firewall itself. So that's also useless.
 
