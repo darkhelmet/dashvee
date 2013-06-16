@@ -125,6 +125,8 @@ Here's my (basic) solution in 80 lines of Go:
 
 <script src="https://gist.github.com/darkhelmet/5790838.js"></script>
 
+In a userland implementation, you `accept` on a socket, then dial out to a backend. You end up with handles to two connections, and you can just copy things between the two. Simple.
+
 ## In the browser, and fin
 
 So the web browser opens a couple connections to the server, and those connections (not requests made on the connection) get balanced. Multiple HTTP requests go on each connection.
