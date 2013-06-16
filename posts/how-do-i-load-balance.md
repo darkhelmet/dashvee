@@ -96,13 +96,15 @@ So we're done then, right? After a connection is made, and the backend server ch
 
 Well, it works just fine. NAT just rewrites the source IP and port of outgoing packets (and destination IP and port of incoming packets), to match up packets from one side of the NAT with packets on the other side of the NAT. It's fine.
 
+In fact, the firewall itself is doing NAT. It has the public IP on one end, and our private network on the other end. It has to alter the IP (and maybe port, not in our case, since 80 forwards to 80) of the packets *anyway* to do the NAT dance. Instead of always changing the IP to the same host (no load balancing, single backend server), it uses the IP it remembered when it balanced the connection.
+
 ## All done…?
 
-That pretty much explains TCP load balancing: pick a backend server when the connection is established and then route subsequent packets based on the source IP and port to the server you picked earlier.
+That pretty much explains TCP load balancing: pick a backend server when the connection is established and then route subsequent packets based on the source IP and port to the server you picked earlier (simple lookup table).
 
 The browser opens a couple connections to the server, and those connections (not requests made on the connection) get balanced. Multiple HTTP requests go on each connection.
 
-So how does that explain the poor balancing we saw during the real exam compared to the load testing? I don't really know.
+So how does that explain the poor balancing we saw during the real exam compared to the load testing? I can't really say for sure.
 
 The load test is quite predictable. Our script logs in, starts the exam, answers each question twice with a random answer, with random pause times in between, and moves on through the questions.
 
@@ -116,7 +118,7 @@ So we have a different pattern of usage, and a different technology stack on the
 * Maybe the load balancer closed idle connections unevenly.
 * Maybe the load balancer software had a bug and was using sticky connections even though we told it not to.
 
-So why was it drastically different between the load test and the real thing?
+Seriously though, why was it drastically different between the load test and the real thing?
 
 Who knows. Computers are hard.
 
