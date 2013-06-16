@@ -121,7 +121,7 @@ That pretty much explains TCP load balancing: pick a backend server when the con
 
 It's actually so simple to implement in userland that the [balance](http://www.inlab.de/balance.html) program does it in less than 1800 lines of C, and it does a bunch of stuff that's above and beyond basic TCP load balancing.
 
-Here's my (basic) solution in Go:
+Here's my (basic) solution in 80 lines of Go:
 
 <script src="https://gist.github.com/darkhelmet/5790838.js"></script>
 
