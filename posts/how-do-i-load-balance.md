@@ -24,6 +24,11 @@ images:
         medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/v1371343518/fuck-yeah.jpg
         large: http://res.cloudinary.com/verboselogging/image/upload/t_large/v1371343518/fuck-yeah.jpg
         original: http://res.cloudinary.com/verboselogging/image/upload/v1371343518/fuck-yeah.jpg
+    musketeers:
+        small: http://res.cloudinary.com/verboselogging/image/upload/t_small/v1371487972/musketeers.jpg
+        medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/v1371487972/musketeers.jpg
+        large: http://res.cloudinary.com/verboselogging/image/upload/t_large/v1371487972/musketeers.jpg
+        original: http://res.cloudinary.com/verboselogging/image/upload/v1371487972/musketeers.jpg
 ---
 Recently at Yardstick, I completely rebuilt the server infrastructure for our high stakes online testing platform, Yardstick Measure.
 
@@ -62,6 +67,8 @@ During the actual exam administration, the load balancing didn't work quite as w
 How does that even work?
 
 ## Three Musketeers, err, packets
+
+<img src="{{.musketeers.medium}}" class="fright bleft bbottom medium" />
 
 First of all, what even is a [TCP packet](http://en.wikipedia.org/wiki/TCP_packet#TCP_segment_structure)? Well it's a header and some data. The header has **source and destination ports**, flags, sequence numbers etc. The data is your HTTP request/response.
 
