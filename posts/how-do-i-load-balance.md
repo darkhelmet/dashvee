@@ -4,7 +4,7 @@ title: Do You Even Load Balance?
 category: software
 description: Load balancing is hard.
 published: true
-publishedon: 17 Jun 2013 10:00 MDT
+publishedon: 18 Jun 2013 10:00 MDT
 slugs: 
     - do-you-even-load-balance
 tags: 
