@@ -37,7 +37,7 @@ We did some load testing to see how our new setup would fare. We used [Neustar](
 
 <img src="{{.nuke_it.medium}}" class="fright bleft bbottom medium" />
 
-First, at about the 900 user mark, we brought down by the actual firewalls as we hit the connection limit that our license allowed. They were also a little misconfigured, as they weren't releasing dead/idle connections when they should have been.
+First, at about the 900 user mark, we brought down the actual firewalls, hitting the connection limit that our license allowed. They were also a little misconfigured, as they weren't releasing dead/idle connections when they should have been.
 
 This brought both Yardstick Measure and our T2 platform down for about **two hours**. We had to actually go down to the data centre and physically restart things.
 
@@ -65,7 +65,7 @@ How does that even work?
 
 First of all, what even is a [TCP packet](http://en.wikipedia.org/wiki/TCP_packet#TCP_segment_structure)? Well it's a header and some data. The header has **source and destination ports**, flags, sequence numbers etc. The data is your HTTP request/response.
 
-What about the IP part of TCP/IP? It's [another layer down](http://en.wikipedia.org/wiki/OSI_model). An [IP packet](http://en.wikipedia.org/wiki/IP_packet) wraps a TCP packet. It also has a header and some data. It's header has all sorts of fun things too, the important parts being the **source and destination IP addresses**.
+What about the IP part of TCP/IP? It's [another layer down](http://en.wikipedia.org/wiki/OSI_model). An [IP packet](http://en.wikipedia.org/wiki/IP_packet) wraps a TCP packet. It also has a header and some data. Its header has all sorts of fun things too, the important parts being the **source and destination IP addresses**.
 
 But things talk over ethernet, right? So what about the [ethernet frame](http://en.wikipedia.org/wiki/Ethernet_frame)? The ethernet frame holds the IP packet. It has things like the **source and destination MAC addresses**.
 
@@ -87,7 +87,7 @@ Looking back at the 3 packets, we have all the information we need.
 
 ## MAC addresses
 
-The source MAC address is actually useless to identify a connection. It only represents the network node that the frame just came from, not the original computer the request originated from. All the packets coming into the firewall probably have the same source MAC address, which that of the upstream router at the data centre. It's basically just the next hop. Network switches use MAC addresses to figure out where packets need to go, but only in their localized world. So that's useless.
+The source MAC address is actually useless to identify a connection. It only represents the network node that the frame just came from, not the original computer the request originated from. All the packets coming into the firewall probably have the same source MAC address, which is that of the upstream router at the data centre. It's basically just the next hop. Network switches use MAC addresses to figure out where packets need to go, but only in their localized world. So that's useless.
 
 The destination MAC address, is that of the firewall itself. So that's also useless.
 
@@ -131,7 +131,7 @@ In a userland implementation, you `accept` on a socket, then dial out to a backe
 
 In both `balance` and my implementation, we `listen`, `accept`, and move bytes around. You can do this by just intercepting and mangling packets using [netfilter](http://en.wikipedia.org/wiki/Netfilter), which is how `iptables` does its thing. Its not really *listening* in the traditional sense, but can receive, process, and forward packets given some rules.
 
-You'll have to do some hardcore `iptables` reading to figure out the best to do that, though [the examples here](http://linuxgazette.net/108/odonovan.html) look pretty legit (I have not tried them).
+You'll have to do some hardcore `iptables` reading to figure out the best way to do that, though [the examples here](http://linuxgazette.net/108/odonovan.html) look pretty legit (I have not tried them).
 
 This method is probably the method the firewall is using to balance things. No explicit listening, just shuffling packets.
 
@@ -159,4 +159,4 @@ Who knows. Computers are hard.
 
 What I do know is that skipping the load balancing in the firewall and using something like HAProxy in `http` mode should result in a much more even balance.
 
-*Thanks to Mark Imbriaco for reviewing this article.*
+*Thanks to Mark Imbriaco and Devin Doucette for reviewing this article.*
