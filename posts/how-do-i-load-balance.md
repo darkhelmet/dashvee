@@ -77,7 +77,7 @@ These are all things we can use to identify where a packet came from and where i
 
 *Sort of.*
 
-TCP is a connection based protocol. HTTP is a request/response based protocol. The browser opens a connection to the server, and can send multiple HTTP requests over that connection. This means the firewall load balances the connections, not the HTTP requests.
+TCP is a **connection based** protocol. HTTP is a **request/response based** protocol. The browser opens a connection to the server, and can send multiple HTTP requests over that connection. This means the firewall load balances the connections, not the HTTP requests.
 
 When a new connection is established, the firewall picks the next server in the round robin order, and all packets on that connection go to that server. It makes note of where the connection is going, and can then merrily route the TCP packets to the correct server. The load balancing part of things happens when the connection is made. Once that's done, it's just directing packets.
 
@@ -126,6 +126,14 @@ Here's my (basic) solution in 80 lines of Go:
 <script src="https://gist.github.com/darkhelmet/5790838.js"></script>
 
 In a userland implementation, you `accept` on a socket, then dial out to a backend. You end up with handles to two connections, and you can just copy things between the two. Simple.
+
+## netfilter and iptables
+
+In both `balance` and my implementation, we `listen`, `accept`, and move bytes around. You can do this by just intercepting and mangling packets using [netfilter](http://en.wikipedia.org/wiki/Netfilter), which is how `iptables` does its thing. Its not really *listening* in the traditional sense, but can receive, process, and forward packets given some rules.
+
+You'll have to do some hardcore `iptables` reading to figure out the best to do that, though [the examples here](http://linuxgazette.net/108/odonovan.html) look pretty legit (I have not tried them).
+
+This method is probably the method the firewall is using to balance things. No explicit listening, just shuffling packets.
 
 ## In the browser, and fin
 
