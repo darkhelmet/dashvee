@@ -29,6 +29,11 @@ images:
         medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/v1371487972/musketeers.jpg
         large: http://res.cloudinary.com/verboselogging/image/upload/t_large/v1371487972/musketeers.jpg
         original: http://res.cloudinary.com/verboselogging/image/upload/v1371487972/musketeers.jpg
+    bro:
+        small: http://res.cloudinary.com/verboselogging/image/upload/t_small/v1371488198/bro.jpg
+        medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/v1371488198/bro.jpg
+        large: http://res.cloudinary.com/verboselogging/image/upload/t_large/v1371488198/bro.jpg
+        original: http://res.cloudinary.com/verboselogging/image/upload/v1371488198/bro.jpg
 ---
 Recently at Yardstick, I completely rebuilt the server infrastructure for our high stakes online testing platform, Yardstick Measure.
 
@@ -77,6 +82,8 @@ What about the IP part of TCP/IP? It's [another layer down](http://en.wikipedia.
 But things talk over ethernet, right? So what about the [ethernet frame](http://en.wikipedia.org/wiki/Ethernet_frame)? The ethernet frame holds the IP packet. It has things like the **source and destination MAC addresses**.
 
 ## Cool story bro
+
+<img src="{{.bro.medium}}" class="fright bleft bbottom medium" />
 
 So why do we care about all this?
 
