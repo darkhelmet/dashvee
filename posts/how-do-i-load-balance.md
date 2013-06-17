@@ -15,15 +15,15 @@ tags:
     - scaling
 images:
     nuke_it:
-        small: http://res.cloudinary.com/verboselogging/image/upload/t_small/nuke-it-from-orbit.jpg
-        medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/nuke-it-from-orbit.jpg
-        large: http://res.cloudinary.com/verboselogging/image/upload/t_large/nuke-it-from-orbit.jpg
-        original: http://res.cloudinary.com/verboselogging/image/upload/nuke-it-from-orbit.jpg
+        small: http://res.cloudinary.com/verboselogging/image/upload/t_small/v1371485055/nuke-it-from-orbit.jpg
+        medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/v1371485055/nuke-it-from-orbit.jpg
+        large: http://res.cloudinary.com/verboselogging/image/upload/t_large/v1371485055/nuke-it-from-orbit.jpg
+        original: http://res.cloudinary.com/verboselogging/image/upload/v1371485055/nuke-it-from-orbit.jpg
     fuck_yeah:
-        small: http://res.cloudinary.com/verboselogging/image/upload/t_small/fuck-yeah.jpg
-        medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/fuck-yeah.jpg
-        large: http://res.cloudinary.com/verboselogging/image/upload/t_large/fuck-yeah.jpg
-        original: http://res.cloudinary.com/verboselogging/image/upload/fuck-yeah.jpg
+        small: http://res.cloudinary.com/verboselogging/image/upload/t_small/v1371343518/fuck-yeah.jpg
+        medium: http://res.cloudinary.com/verboselogging/image/upload/t_medium/v1371343518/fuck-yeah.jpg
+        large: http://res.cloudinary.com/verboselogging/image/upload/t_large/v1371343518/fuck-yeah.jpg
+        original: http://res.cloudinary.com/verboselogging/image/upload/v1371343518/fuck-yeah.jpg
 ---
 Recently at Yardstick, I completely rebuilt the server infrastructure for our high stakes online testing platform, Yardstick Measure.
 
