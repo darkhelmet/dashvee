@@ -4,23 +4,14 @@
 
 module:testrunner
 
-GET     /2w6wdfk.html   Static.Serve("public","2w6wdfk.html")
-GET     /BingSiteAuth.xml   Static.Serve("public","BingSiteAuth.xml")
-GET     /favicon.ico    Static.Serve("public","favicon.ico")
-GET     /img/backgrounds.gif    Static.Serve("public","img/backgrounds.gif")
-GET     /img/buttons-disabled.png   Static.Serve("public","img/buttons-disabled.png")
-GET     /img/buttons.png    Static.Serve("public","img/buttons.png")
-GET     /img/delete.gif Static.Serve("public","img/delete.gif")
-GET     /img/done.gif   Static.Serve("public","img/done.gif")
-GET     /img/error.gif  Static.Serve("public","img/error.gif")
-GET     /img/throbber.gif   Static.Serve("public","img/throbber.gif")
-GET     /img/transp50.png   Static.Serve("public","img/transp50.png")
-GET     /robots.txt Static.Serve("public","robots.txt")
-GET     /sitemap.xsl    Static.Serve("public","sitemap.xsl")
-GET     /swf/expressInstall.swf Static.Serve("public","swf/expressInstall.swf")
-GET     /swf/flowplayer.controls.swf    Static.Serve("public","swf/flowplayer.controls.swf")
-GET     /swf/flowplayer.swf Static.Serve("public","swf/flowplayer.swf")
-GET     /y_key_0f35e6e63807bccd.html    Static.Serve("public","y_key_0f35e6e63807bccd.html")
+GET     /2w6wdfk.html                                       Static.Serve("public","2w6wdfk.html")
+GET     /BingSiteAuth.xml                                   Static.Serve("public","BingSiteAuth.xml")
+GET     /favicon.ico                                        Static.Serve("public","favicon.ico")
+GET     /robots.txt                                         Static.Serve("public","robots.txt")
+GET     /sitemap.xsl                                        Static.Serve("public","sitemap.xsl")
+GET     /y_key_0f35e6e63807bccd.html                        Static.Serve("public","y_key_0f35e6e63807bccd.html")
+GET     /img/*filepath                                      Static.Serve("public/img")
+GET     /swf/*filepath                                      Static.Serve("public/swf")
 
 GET     /                                                   App.Index
 GET     /opensearch.xml                                     App.OpenSearch
