@@ -1,5 +1,13 @@
+PKG=github.com/darkhelmet/dashvee
+DIR=/tmp/dashvee
 test:
-	revel test `cat .godir`
+	revel test $(PKG)
 
 run:
-	revel run `cat .godir`
+	revel run $(PKG)
+
+build:
+	revel build $(PKG) $(DIR)
+
+package:
+	revel package $(PKG) $(DIR)

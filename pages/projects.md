@@ -8,90 +8,53 @@ publishedon: 18 Dec 2012 21:17 MST
 slugs: 
 - projects
 ---
-# Projects
+These are apps, libraries, and other projects I'm working on, or have done in the past.
 
-These are some things I'm working on, or have done in the past.
+# Apps
 
 ## [Tinderizer](http://Tinderizer.com/)
 
 Tinderizer allows you with the click of a bookmark, to send almost any
-page on the web to your Kindle for reading at a later time.
-
--   Language: [Go](http://golang.org/)
--   Hosting: [Heroku](http://heroku.com/)
--   Links
-    -   [Source](https://github.com/darkhelmet/ForrestFire)
-    -   [Webpage](http://Tinderizer.com/)
-
-## [fetch](https://github.com/darkhelmet/fetch)
-
-fetch is a super simple full text search engine written in Go.
-
--   Language: [Go](http://golang.org/)
--   Links
-    -   [Source](https://github.com/darkhelmet/fetch)
-
-## [env](https://github.com/darkhelmet/env)
-
-env is a package for the Go programming language to pull variables from
-the environment. It can pull strings, ints, and floats, and you can
-optionally specify a default.
-
--   Language: [Go](http://golang.org/)
--   Links
-    -   [Source](https://github.com/darkhelmet/env)
-
-## [twitterstream](https://github.com/darkhelmet/twitterstream)
-
-Twitter streaming API for Go. Only supports password authentication
-right now.
-
--   Language: [Go](http://golang.org/)
--   Links
-    -   [Source](https://github.com/darkhelmet/twitterstream)
+page on the web to your Kindle for reading at a later time. It's written in [Go](http://golang.org/), hosted on [Heroku](http://heroku.com/) and the [source is available here](https://github.com/darkhelmet/ForrestFire).
 
 ## [compiler](http://compiler.herokuapp.com/)
 
-compiler is a simple web app to compile less and coffeescript as a
-service
+This is a simple web app to compile less and coffeescript as a
+service. It runs on [node.js](http://nodejs.org/) with with the [source available here](https://github.com/darkhelmet/compiler).
 
--   Language: Javascript
--   Platform: [node.js](http://nodejs.org/)
--   Links
-    -   [Source](https://github.com/darkhelmet/compiler)
+## [balance](https://github.com/darkhelmet/balance/releases)
+
+`balance` does simple TCP, HTTP, and HTTPS load balancing with a minimal [Go](http://golang.org/) app. You can see the [source code here](https://github.com/darkhelmet/balance).
+
+# Books
+
+## [Go, The Standard Library](http://thestandardlibrary.com/go.html)
+
+Go, The Standard Library is an in depth look into the standard library packaged with the Go Programming Language. Learn to use the standard library to build apps fast, with less dependencies. It focuses on complete examples instead of incomplete snippets.
+
+# Go Libraries
+
+## [env](https://github.com/darkhelmet/env)
+
+env is a library for [Go](http://golang.org/) to pull variables from
+the environment. It can pull strings, ints, and floats, and you can
+optionally specify a default.
+
+## [twitterstream](https://github.com/darkhelmet/twitterstream)
+
+twitterstream is a Twitter streaming API for [Go](http://golang.org/). It only supports password authentication.
+
+# Ruby Libraries
 
 ## [sinatra-bundles](https://github.com/darkhelmet/sinatra-bundles)
 
 sinatra-bundles is an extension to bundle and compress Javascript and
 CSS assets for [sinatra](http://www.sinatrarb.com/)
 
--   Platform: [sinatra](http://www.sinatrarb.com/)
--   Language: ruby
--   Links
-    -   [Source](https://github.com/darkhelmet/sinatra-bundles)
-
 ## [rack-gist](https://github.com/darkhelmet/rack-gist)
 
 rack-gist rewrites Github gist script includes to make them load
-asynchronously, without blocking your page from loading.
-
--   Platform: [rack](http://rack.rubyforge.org/)
--   Language: ruby
--   Links
-    -   [Source](https://github.com/darkhelmet/rack-gist)
-    -   [Blog
-        post](http://blog.darkhax.com/2010/07/16/rack-gist-the-gists-are-now-diamonds)
-
-## [goo.gl](https://github.com/darkhelmet/goo.gl)
-
-goo.gl is a little API endpoint to use Google's URL shortener to shorten
-URLs in the Twitter iPhone client.
-
--   Platform: [sinatra](http://www.sinatrarb.com/)
--   Language: ruby
--   Hosting: [Heroku](http://heroku.com/)
--   Links
-    -   [Source](https://github.com/darkhelmet/goo.gl)
+asynchronously, without blocking your page from loading. Check it out more [here](http://blog.darkhax.com/2010/07/16/rack-gist-the-gists-are-now-diamonds).
 
 ## [Twitter Link Filter Bookmarklet](https://gist.github.com/2647177)
 
