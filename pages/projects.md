@@ -26,6 +26,10 @@ service. It runs on [node.js](http://nodejs.org/) with with the [source availabl
 
 `balance` does simple TCP, HTTP, and HTTPS load balancing with a minimal [Go](http://golang.org/) app. You can see the [source code here](https://github.com/darkhelmet/balance).
 
+## [flickrd](https://github.com/darkhelmet/flickrd/releases)
+
+A simple app to download the original photos from one of your sets on Flickr.
+
 ## [sniper](https://github.com/darkhelmet/sniper)
 
 sniper is a process monitoring app written in Go. It's in progress.
