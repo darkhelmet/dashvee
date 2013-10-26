@@ -73,7 +73,7 @@ longitude, and vice versa.
 
 So when do you decide, "yes, this needs a new distinct type" instead of
 just using something built in? In this particular case, it was honestly
-the first thing I thought of. My brain immediately went to the "want if
+the first thing I thought of. My brain immediately went to the "what if
 you try to do stuff with the incompatible types?" area. Naturally, new
 types.
 
