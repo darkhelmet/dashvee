@@ -40,7 +40,7 @@ func (t AppTest) Test404() {
 func (t AppTest) TestIndex() {
     t.Get("/")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
 }
 
 func (t AppTest) TestOpenSearch() {
@@ -52,7 +52,7 @@ func (t AppTest) TestOpenSearch() {
 func (t AppTest) TestSearch() {
     t.Get("/search?query=cucumber")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
     t.AssertContains(`Search results for &#34;cucumber&#34;`)
     t.AssertContains("Debugging Cucumber On Rails")
     t.AssertContains("Riding Rails With Selenium")
@@ -77,39 +77,39 @@ func (t AppTest) TestSitemap() {
 func (t AppTest) TestFullArchive() {
     t.Get("/archive/full")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
 }
 
 func (t AppTest) TestCategoryArchive() {
     t.Get("/archive/category")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
 }
 
 func (t AppTest) TestMonthlyArchive() {
     t.Get("/archive/month")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
 }
 
 func (t AppTest) TestMonthly() {
     t.Get("/2013/05")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
     t.AssertContains("Archives for 5/2013")
 }
 
 func (t AppTest) TestCategory() {
     t.Get("/category/editorial")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
     t.AssertContains("Editorial Articles")
 }
 
 func (t AppTest) TestPermalink() {
     t.Get("/2013/05/01/ruby-batteries-included")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
     t.AssertContains("Ruby Batteries Included")
     t.AssertContains("Salt Lake City, Utah")
 }
@@ -122,7 +122,7 @@ func (t AppTest) TestNotFoundPermalink() {
 func (t AppTest) TestTag() {
     t.Get("/tag/ruby")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
     t.AssertContains(`Articles tagged with &#34;ruby&#34;`)
     t.AssertContains("Ruby Batteries Included")
 }
@@ -130,7 +130,7 @@ func (t AppTest) TestTag() {
 func (t AppTest) TestPage() {
     t.Get("/about")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
     t.AssertContains("I am a software engineer")
 }
 
@@ -142,6 +142,6 @@ func (t AppTest) TestNotFoundPage() {
 func (t AppTest) TestProgrammingJournals() {
     t.Get("/2012/09/03/on-programming-journals")
     t.AssertOk()
-    t.AssertContentType("text/html")
+    t.AssertContentType("text/html; charset=utf-8")
     t.AssertContains("On Programming Journals")
 }
