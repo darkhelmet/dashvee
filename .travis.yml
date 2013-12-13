@@ -11,7 +11,7 @@ install:
     - travis_retry go get -v github.com/darkhelmet/dashvee/app
     - travis_retry go get -v github.com/darkhelmet/dashvee/app/controllers
 script: revel test github.com/darkhelmet/dashvee
-after_success: ./deploy.sh
+after_success: ./deploy.sh; travis_assert
 env:
     global:
         - TZ: Canada/Mountain
