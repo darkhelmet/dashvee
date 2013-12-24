@@ -24,6 +24,7 @@ GET     /archive/category                                   App.CategoryArchive
 GET     /archive/month                                      App.MonthlyArchive
 GET     /category/:category                                 App.Category
 GET     /tag/:tag                                           App.Tag
+GET     /p/:slug                                            App.Slug
 GET     /:year/:month                                       App.Monthly
 GET     /:year/:month/:day/:slug                            App.Permalink
 GET     /:slug                                              App.Page

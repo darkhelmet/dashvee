@@ -106,6 +106,14 @@ func (t AppTest) TestCategory() {
     t.AssertContains("Editorial Articles")
 }
 
+func (t AppTest) TestSlug() {
+    t.Get("/p/custom-scout-plugins")
+    t.AssertOk()
+    t.AssertContentType("text/html; charset=utf-8")
+    t.AssertContains("One is the loneliest number")
+    t.AssertContains("PagerDuty")
+}
+
 func (t AppTest) TestPermalink() {
     t.Get("/2013/05/01/ruby-batteries-included")
     t.AssertOk()

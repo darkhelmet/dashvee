@@ -195,6 +195,23 @@ func (c App) Category(category string) revel.Result {
     return c.Render(posts, title, description, canonical)
 }
 
+func (c App) Slug(slug string) revel.Result {
+    post, err := posts.FindBySlug(slug)
+    if err != nil {
+        switch err.(type) {
+        case errors.NotFound:
+            return c.NotFound("")
+        default:
+            revel.ERROR.Printf("failed finding post with slug(%#v): %s (%T)", slug, err, err)
+            return c.RenderError(err)
+        }
+    }
+
+    title := post.Title
+    description := post.Description
+    return c.Render(post, title, description)
+}
+
 func (c App) Permalink(year, month, day int, slug string) revel.Result {
     post, err := posts.FindByPermalink(year, time.Month(month), day, slug)
     if err != nil {
