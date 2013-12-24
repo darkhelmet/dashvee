@@ -11,4 +11,3 @@
 //= require ./handlebars
 //= require ./jquery.embedly
 //= require ./darkblog
-//= require ./CFInstall

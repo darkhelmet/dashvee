@@ -35,7 +35,7 @@ main rails application.
 I wanted this same technique for Rails 3.x stuff, since that's how I
 could nicely integrate
 [sinatra-bundles](https://github.com/darkhelmet/sinatra-bundles) into
-Rails 3.x [^1]
+Rails 3.x[^1]
 
 Anyway, it's stupid simple, but here it is.
 
@@ -46,5 +46,4 @@ Drop that in your lib directory. You can make a class, inherit from
 that as rack middleware. Now it basically works just like using Sinatra
 for metal in Rails 2.x.
 
-[^1]: WIth Rails 2.x, you can just drop in a metal controller in the
-    `app/metal` directory.
+[^1]: WIth Rails 2.x, you can just drop in a metal controller in the `app/metal` directory.
