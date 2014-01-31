@@ -124,133 +124,381 @@ images:
     original: http://cdn.verboselogging.com/transloadit/original/3b/4e986aaabb6b027f89c8015ebaf95e/gary.png
     large: http://cdn.verboselogging.com/transloadit/large/02/5a1f9a3498f5764b2d2f3d1e7d35ae/gary.png
 ---
-<p>RubyConf 2012 is at an end, and what a time it was. This was my first conference, and it was all thanks to my employer <a href="http://getyardstick.com/">Yardstick</a>. If it wasn&#8217;t for them, I probably wouldn&#8217;t have been able to come, learn so much, and meet so many great people.</p>
-<p><a href="/2012/10/27/my-rubyconf-mission-thank-all-the-people">My mission</a> was to thank as many people as possible, in person. Open source is somewhat of a thankless job. Lots of people using your code or what have you, and never receiving thanks for it.</p>
-<p>While I didn&#8217;t get to meet and thank everybody I wanted to, I did get to quite a few of you. In no particular order&#8230;</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/e3/8512155887f48a94d2bf455bce9d28/matz.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/e8/bc2970d690c4d342b77fd5bdb5d7c9/matz.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Yukihiro &#8220;Matz&#8221; Matsumoto</h2>
-<p>Matz is the reason we were all there. In 1993, Matz started working on what would become ruby. In December of 1995 it was first released. Ruby 1.8 came out in 2003.</p>
-<p>Currently, he works full time on ruby for Heroku. Basically, he gets to do what he loves, and Heroku signs the cheques.</p>
-<p>Domo arigato Matsumoto-san. Ruby makes many people&#8217;s lives better, and the world is a better place for having it. It was a pleasure meeting you and hearing your keynote. I hope we meet again in the future.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/3e/70faf2a47c9e21c3bc408411ed23b0/tenderlove.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/7e/b4cb62552b80389369cc2efbe609d3/tenderlove.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Aaron &#8220;Tenderlove&#8221; Patterson</h2>
-<p>Aaron is a beacon of positivity in the ruby community. He&#8217;s always wearing a smile and I&#8217;m pretty sure the only reason he stops working is because <a href="https://twitter.com/gorbypuff">his cat</a> is sitting on his keyboard.</p>
-<p>He works for AT&amp;T on open source, similar to Matz. He works on rails-core and ruby-core, and has an impressive array of project on <a href="https://github.com/tenderlove">Github</a>. Chances are you&#8217;ve run code he&#8217;s written.</p>
-<p><a href="https://twitter.com/tenderlove">Follow him on Twitter</a> and give him a hug.</p>
-<p>Thanks Aaron for all the work you do, code you write, knowledge you drop on us on <a href="http://tenderlovemaking.com/">your blog</a>, and your positive attitude. It makes the community better, and encourages us all to be better.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/7a/472e117068c43c60bdab193c3b18d2/weirich.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/ee/9f18b1a674c4e91453db0a570ac0bc/weirich.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Jim Weirich</h2>
-<p>You&#8217;ve used Jim Weirich&#8217;s code. Yes you have. You know <a href="http://rake.rubyforge.org/">rake</a>? Yeah, that was Jim. He also made the <a href="http://builder.rubyforge.org/">builder gem</a> for doing <span class="caps">XML</span> generation. <a href="http://flexmock.rubyforge.org/">flexmock</a> is another one of his that you might use.</p>
-<p>He always gives great presentations at conferences (go watch the videos), and is never greedy when it comes to knowledge and source code.</p>
-<p>These <a href="https://twitter.com/darkhelmetlive/status/264761788682358785">two</a> <a href="https://twitter.com/djspinmonkey/status/264813508301058049">tweets</a> pretty much cover it.</p>
-<p>Thanks Jim for the great talk, the hug, and all the work you&#8217;ve done and given to the ruby community. It wouldn&#8217;t be the same without you.</p>
-<p>Thank Jim yourself on <a href="https://twitter.com/jimweirich">his Twitter</a> or on <a href="http://onestepback.org/">his blog</a>. See what other code he&#8217;s shared on <a href="https://github.com/jimweirich">his Github</a>.</p>
-<h2>Charles Nutter, Tom Enebo, Nick Sieger</h2>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/94/87ec00e5990e82fdd998dbe2605ab3/jruby.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/6f/18de6f2f86a90cf3e97c186652805c/jruby.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<p>Charlie (center), Tom (left) and Nick (below with Corey Haines) are a few of the <a href="http://jruby.org/">JRuby</a> core developers. You know, that popular ruby implementation on the <span class="caps">JVM</span> with some crazy performance numbers? Yeah that one. Without these smart people on the JRuby team (and also Ola Bini who wasn&#8217;t present at RubyConf), JRuby would probably just be old abandoned project not worth your time.</p>
-<p>Because of their hard work, JRuby is a force to reckoned with. Charles is also involved with <span class="caps">JVM</span> optimizations (I believe he was on two <span class="caps">JSR</span> committees), and puts out a lot of code to help get people up and running on JRuby.</p>
-<p>Thanks for all the hard work Charles, Tom, Nick (and Ola!). JRuby is an awesome positive project in the ruby community, and lots of people depend on it. You guys just keep making it better.</p>
-<p>Thank Charles on <a href="https://twitter.com/headius">Twitter</a> or <a href="http://blog.headius.com/">his blog</a> and get his code on <a href="https://github.com/headius">Github</a>.</p>
-<p>Find Tom on <a href="https://twitter.com/tom_enebo">Twitter</a>, <a href="https://github.com/enebo">Github</a> or on <a href="http://blog.enebo.com/">his blog</a>.</p>
-<p>Nick Sieger is also on <a href="https://twitter.com/nicksieger">Twitter</a>, <a href="https://github.com/nicksieger">Github</a> and has <a href="http://blog.nicksieger.com/">a blog</a>.</p>
-<p>Ola Bini has <a href="https://twitter.com/olabini">Twitter</a>, <a href="https://github.com/olabini">Github</a>, and <a href="http://olabini.com/blog/">a blog</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/4b/c1ed06b8b47b9103debe4b62bb3004/IMG_0396.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/b6/1f538154e8c99ff791d38e2c7cdb51/IMG_0396.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Corey Haines</h2>
-<p>Corey (right, Nick Sieger left), like Aaron, is pure positivity. I&#8217;m convinced he can&#8217;t form a frown, but Sarah Gray assured me he does frown, but it&#8217;s only at poorly designed code.</p>
-<p>As an advocate of the &#8220;software craftsmanship&#8221; movement, he started <a href="http://coderetreat.org/">Code Retreat</a>. These are day long practice sessions to help software developers hone their craft with others.</p>
-<p>He&#8217;s all about becoming better, together.</p>
-<p>Thanks Corey. Your positivity is incredibly valuable, and the ruby community is lucky to have you. Your desire to become better and help us become better as a group is something the ruby community has and others don&#8217;t. That&#8217;s actually a little sad. Everybody community should have Corey Haines.</p>
-<p>You can find Corey on <a href="https://twitter.com/coreyhaines">Twitter</a>, <a href="https://github.com/coreyhaines">Github</a>, and <a href="http://coreyhaines.com/">his website</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/b4/4ca8473c519d23b087de51d411a97b/coby.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/8b/3f903bb59e430d0bfbc2b34baecc68/coby.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Coby Randquist</h2>
-<p>Coby isn&#8217;t pumping out rubygems or ruby-core optimizations, so what does he do? You might not be familiar with the name, because Coby is behind the scenes. Specifically <a href="http://www.confreaks.com/">Confreaks</a>.</p>
-<p>All those videos that are online from ruby and other conferences <strong>for free</strong>. Coby&#8217;s company produces those. At RubyConf he and his crew were running around between 4 different rooms, recording and live streaming all the talks on Justin.tv.</p>
-<p>It took a while for me to talk to Coby and thank him, because he was always on his game and making sure things were working. If you get the chance, shake his hand and give him the props he deserves.</p>
-<p>Thanks Coby for all the videos! Thank him yourself on <a href="https://twitter.com/kobier">Twitter</a> and <a href="http://randquist.us/blog/">his blog</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/2e/9e18dd20a8f21349a5eca166512eaf/helmkamp.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/48/fdca6325191b8601e29af973848d8d/helmkamp.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Bryan Helmkamp</h2>
-<p>Bryan developed the <a href="https://github.com/brynary/rack-bug">rack-bug</a> gem which gives you insight into your application when things just aren&#8217;t working the way they&#8217;re supposed to.</p>
-<p>More recently, he founded <a href="https://codeclimate.com/">Code Climate</a> which does hosted software metrics for ruby applications. It&#8217;s a business so you&#8217;ll pay for private projects, but for all your open source stuff it&#8217;s nice and free. Head over to the <a href="https://codeclimate.com/explore">Explore</a> page to see some of those projects and add your own.</p>
-<p>The similarity between these two projects is that they aren&#8217;t for Bryan; they&#8217;re for us. They help us debug our software and make it better. They encourage better code and generally improve the ruby community. Thanks Bryan!</p>
-<p>Find him on <a href="https://github.com/brynary">Github</a> and <a href="https://twitter.com/brynary">Twitter</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/c1/514d3fed869ab2e4dbc2f1ba51271a/hunt.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/d0/bee908fa2044ce732d0092e7f9b8ae/hunt.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Chris Hunt</h2>
-<p>Chris Hunt gave a great talk on Service Oriented Architecture at Square. One of the best parts was all the links to <a href="https://github.com/square">public Github repositories</a> that Square has released.</p>
-<p>Chris Hunt and Square are shipping like bosses, and it&#8217;s making our community better. Things like <a href="https://github.com/square/cane">cane</a> and <a href="https://github.com/square/fdoc">fdoc</a> are fantastic. Outside of the ruby community they have Android/Java projects.</p>
-<p>They are giving it all back. Thanks Chris, and thanks Square!</p>
-<p>Find Chris on <a href="https://twitter.com/chrishunt">Twitter</a>, at <a href="http://chrishunt.co/">his website</a>, and on <a href="https://github.com/chrishunt">Github</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/be/7482eaf72dfc0429b3fca46ea02eff/loren.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/32/35c6422ff70ff0643498fa700dfb71/loren.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Loren Segal</h2>
-<p>Write documentation for your code. Pretty please? If you don&#8217;t, Loren Segal will find you. He&#8217;s Canadian though, so he&#8217;ll probably just ask you nicely if you could write docs. I think your kneecaps are safe.</p>
-<p>He&#8217;s the brains behind the <a href="https://github.com/lsegal/yard">yard gem</a> for documenting your ruby code. It powers <a href="http://rdoc.info/">http://rdoc.info/</a> which is where I go for all my documentation needs.</p>
-<p>When I thanked Loren, he gave this sigh of relief. You should thank him too, and you should probably use yard to document your ruby code. He also gave a talk at RubyConf, so check out the video when it&#8217;s up. Thanks Loren!</p>
-<p>He can be found on <a href="https://twitter.com/lsegal">Twitter</a>, <a href="https://github.com/lsegal">Github</a>, and <a href="http://gnuu.org/">gnuu.org</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/87/22c462b25c372198a084d14c2e9a36/perham.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/d6/fa1422fb2c8f75647fd864d530b95e/perham.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Mike Perham</h2>
-<p>Mike is all about concurrency on ruby. Some of his work includes <a href="http://mperham.github.com/sidekiq/">sidekiq</a>, <a href="https://github.com/mperham/girl_friday">girl_friday</a>, and <a href="https://github.com/mperham/rack-fiber_pool">rack-fiber_pool</a>. Sidekiq is a job queue similar to <a href="https://github.com/defunkt/resque">Resque</a> but instead of processes it uses threads. girl_friday gives you an in-process job queue, and rack-fiber_pool runs requests in ruby fibers, which if used properly can work quite well.</p>
-<p>He also wrote the <a href="https://github.com/mperham/dalli">dalli</a> gem, a fast pure ruby memcached client. Give some of those gems a try. You won&#8217;t be disappointed!</p>
-<p>Thanks for all the code Mike! Keep on pushing concurrency to new levels.</p>
-<p>His RubyConf talk will also be on Confreaks, but until then, find him on <a href="https://twitter.com/mperham">Twitter</a>, <a href="https://github.com/mperham">Github</a>, <a href="http://www.mikeperham.com/">his blog</a> and buy cool gear at <a href="https://www.theclymb.com/">The Clymb</a> (only US, makes me a sad panda).</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/09/e64a26170a708ecbb5bb10dcfee82d/storimer.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/ec/a1f766583df03fbc20e5b327279dc3/storimer.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Jesse Storimer</h2>
-<p>Jesse is a fellow Canadian, and in recent times a budding, nay, accomplished author. He&#8217;s written two books to bring lower level techniques such as forking, <span class="caps">IPC</span>, and <span class="caps">TCP</span> sockets to ruby developers.</p>
-<p>For a lot of the ruby community, the C programming language is completely foreign. Along with it go things like fork/exec, <span class="caps">IPC</span>, and raw <span class="caps">TCP</span> socket knowledge. Jesse brings these topics together in <a href="http://workingwithcode.com/">two books</a>: Working With <span class="caps">UNIX</span> Processes and Working With <span class="caps">TCP</span> Sockets. These are important topics and will help you understand your development stack and write better code, even if you never actually use the techniques in your app. They&#8217;ll definitely make you think!</p>
-<p>Get your fork on and level up your <span class="caps">UNIX</span> beard, and buy his books. Seriously. He stepped it up a bit with the newest one as for a little bit more money you can get an hour long screencast on building an evented IO server.</p>
-<p>Thanks Jesse for the great resources, and thanks for the signed copy!</p>
-<p>He&#8217;s all up on <a href="https://twitter.com/jstorimer">Twitter</a>, <a href="https://github.com/jstorimer">Github</a>, and <a href="http://jstorimer.com/">his blog</a>. Also, he is not <a href="http://cdn.verboselogging.com/transloadit/original/5d/dcec3102645b8a3193aea887772b77/kroeger.jpg">Chad Kroeger</a></p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/fe/5316ea2ca56e305a5f637a4058e35a/scofield.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/35/9b89da3642ba94e5c33aac8a855716/scofield.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Ben Scofield</h2>
-<p>Ben is the man behind the curtains at RubyConf. Along with Evan Phoenix handling MC duties and his army of volunteers, Ben makes sure RubyConf happens, and happens without anything lighting on fire.</p>
-<p>His <a href="https://github.com/bscofield">Github</a> account isn&#8217;t as active as a lot of rubyists, but he&#8217;s got other things on his mind. He also handles RailsConf since it&#8217;s a <a href="http://www.rubycentral.org/">Ruby Central</a> thing.</p>
-<p>Without Ben, RubyConf probably wouldn&#8217;t have happened, or Evan&#8217;s head would have exploded. Running a conference isn&#8217;t something you can do on your own, but Ben and Evan made a pretty good team. Thanks for the conference guys! It was great!</p>
-<p>You&#8217;ll find Ben on <a href="http://benscofield.com/">his blog</a> or on <a href="https://twitter.com/bscofield">Twitter</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/63/0648e8fb6ce4835546f58d02557700/phoenix.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/0c/df2399f0735a2dfe6d5a2e044c1beb/phoenix.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Evan Phoenix</h2>
-<p>I mentioned Evan Phoenix just a second ago along with Ben Scofield. Evan is a director on Ruby Central, and was instrumental in RubyConf happening the way it did. He MC&#8217;d the event, and was always around to make sure things were going smoothly.</p>
-<p>On top of that, he works on <a href="http://rubini.us/">Rubinius</a>, that other awesome ruby implementation with real threads and no <span class="caps">GIL</span>, and the <a href="http://puma.io/">puma webserver</a>. These are both great projects, and give ruby developers (along with JRuby) a truly concurrent virtual machine ready for the next generation of applications.</p>
-<p>If that wasn&#8217;t enough, he was ear to ear smiles the whole time I saw him at RubyConf. Thanks for all the code Evan, and thanks for the positive attitude.</p>
-<p>Find Evan on <a href="https://twitter.com/evanphx">Twitter</a>, <a href="https://github.com/evanphx">Github</a> and on <a href="http://blog.fallingsnow.net/">his blog</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/6b/fa3695421b863a261f1fa46287ca2b/ford.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/8a/6174cdbac636487f16d8fb2bd7fba7/ford.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Brian Ford</h2>
-<p>Brian Ford, along with Evan, works on <a href="http://rubini.us/">Rubinius</a>. Rubinius stays on the leading edge of ruby thanks to the hard work Brian puts in. You really should take a serious look at. It&#8217;s ahead of the curve and deserves more attention than it gets. Real threads, no <span class="caps">GIL</span>, and a lot of the core libraries and tools are written in ruby itself. What&#8217;s not to love?</p>
-<p>Other languages also target the VM, which is built with other languages in mind. It&#8217;s not <em>just</em> a ruby VM.</p>
-<p>Next time you see Brian, go off to your computer and install rubinius, play with it, run your app on it, report bugs and offer patches. Then go buy him a whiskey. After his talk, of course. He gives great talks. Thanks Brian!</p>
-<p>Head over to <a href="https://twitter.com/brixen">Twitter</a>, <a href="https://github.com/brixen">Github</a>, and <a href="http://brixen.io/">his blog</a> to thank him.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/f1/be763a4e13d692e5a5575136a1bba1/susser.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/b0/e6168063f5fbd9d581acb171d61118/susser.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Josh Susser</h2>
-<p>Josh gave a talk at RubyConf this year, and I probably should have gone, but the talk on racc was too tempting. I&#8217;ll probably watch the RubyConf video a few times and have my mind blown.</p>
-<p>On top of talking, he&#8217;s been blogging since February of 2006, on ruby, Rails, and a variety of other topics.</p>
-<p>You might also recognize Josh, his voice anyway, from the <a href="http://rubyrogues.com/">Ruby Rogues podcast</a> where he is a regular with the other Rogues. Listen to that podcast if you don&#8217;t. It&#8217;s filled with good stuff. Thanks for all the knowledge Josh!</p>
-<p>Follow him on <a href="https://twitter.com/joshsusser">Twitter</a>, <a href="http://blog.hasmanythrough.com/">his blog</a>, or his <a href="https://github.com/joshsusser">Github</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/58/ba5aee0a47ab57c539745485466859/eleanor.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/21/fc2a092fc588041f158fbdd0bbcc35/eleanor.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Eleanor McHugh</h2>
-<p>Eleanor is true hacker. She&#8217;s like a British female _why. She does ruby and Go, plays with virtual machines, gives talks, and can dance up a storm.</p>
-<p>She moderated the lightning talks at RubyConf this year as well. She&#8217;s generally a positive force in whatever community she&#8217;s in.</p>
-<p>I highly recommend <a href="http://www.confreaks.com/presenters/208-eleanor-mchugh">her videos on Confreaks</a> and <a href="http://www.slideshare.net/feyeleanor">her slides on Slideshare</a>. Thanks for all the knowledge Eleanor!</p>
-<p>Bug her on <a href="https://twitter.com/feyeleanor">Twitter</a> and <a href="https://github.com/feyeleanor">Github</a>.</p>
-<h2>Yehuda Katz, Matt Aimonetti, Eric Hodel</h2>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/33/7e67e123fadea68e8697e24d3ec68e/IMG_0374.jpg"><img src="http://cdn.verboselogging.com/transloadit/medium/37/180a540612c974db839f158e2dc424/IMG_0374.jpg" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<p>From left to right we have Yehuda Katz, Aaron Patterson, Eric Hodel, and Matt Aimonetti. Where to start?</p>
-<p>Yehuda&#8217;s done Merb, Rails, <a href="http://handlebarsjs.com/">Handlebars</a>, <a href="http://whatisthor.com/">Thor</a>, <a href="https://github.com/wycats/rack-offline">rack-offline</a>, and <a href="http://gembundler.com/">bundler</a>.</p>
-<p>Find Yehuda on <a href="https://twitter.com/wycats">Twitter</a>, <a href="https://github.com/wycats">Github</a>, and <a href="http://yehudakatz.com/">his blog</a>.</p>
-<p>Matt&#8217;s done Merb, <a href="https://github.com/mattetti/Weasel-Diesel">Weasel-Diesel</a>, <a href="http://ofps.oreilly.com/titles/9781449380373/">MacRuby: The Definitive Guide</a>, <a href="https://github.com/mattetti/googlecharts">googlecharts</a>, <a href="http://bubblewrap.io/">BubbleWrap</a>, and about a billion other Github repos.</p>
-<p>Find Matt on <a href="https://twitter.com/merbist">Twitter</a>, <a href="https://github.com/mattetti">Github</a>, and <a href="http://matt.aimonetti.net/">his blog</a>.</p>
-<p>Eric? <a href="http://rubyforge.org/projects/rubygems/">Rubygems yo!</a> <strong>Drops the mic.</strong></p>
-<p>Find Eric on <a href="https://twitter.com/drbrain">Twitter</a>, <a href="https://github.com/drbrain">Github</a>, and <a href="http://blog.segment7.net/">his blog</a></p>
-<p>Thanks guys, for all the hard work you do, code you put out, articles and books you write, and talks you give. Thank you.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/1d/0088196913f871869711ad8a6b5d3e/mei.png"><img src="http://cdn.verboselogging.com/transloadit/medium/28/6c1a8c6b5fea8e68e4630d044c15fc/mei.png" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Sarah Mei</h2>
-<p>This year at RubyConf, Sarah Mei gave the first female keynote. She dropped the mic and the roof blew off the convention center.</p>
-<p>When she&#8217;s not wowing audiences, she&#8217;s writing ruby for the <a href="https://joindiaspora.com/">Diaspora project</a> and organizes <a href="http://workshops.railsbridge.org/">Rails workshops for women</a>. She&#8217;s improving the ruby, Rails, and social networking communities, and getting more women into programming.</p>
-<p><strong>Like a boss.</strong> Thanks Sarah!</p>
-<p>Give Sarah mad props at <a href="http://www.sarahmei.com/blog/">her blog</a>, on <a href="https://twitter.com/sarahmei">Twitter</a>, and on <a href="https://github.com/sarahmei">Github</a>.</p>
-<p><figure><a href="http://cdn.verboselogging.com/transloadit/original/3b/4e986aaabb6b027f89c8015ebaf95e/gary.png"><img src="http://cdn.verboselogging.com/transloadit/medium/07/92e1b9af38f87f0c45a4322a4aaf71/gary.png" class="fright bleft bbottom medium" alt="" /></a></figure></p>
-<h2>Gary Bernhardt</h2>
-<p>Gary drops knowledge like bombs with his <a href="https://www.destroyallsoftware.com/">Destroy All Software</a> screencasts and his talks. He gave a great one at RubyConf. Watch the video if you didn&#8217;t get to see it. Hell, watch it even if you did.</p>
-<p>He also likes to <a href="https://github.com/garybernhardt/base">troll us all</a> once in a while. But he educates and trolls with a little smirk and it makes us all giggle a little bit. He brings joy, knowhow, and entertainment in one fantastically well dressed package. Thanks Gary!</p>
-<p>Tweet Gary on <a href="https://twitter.com/garybernhardt">Twitter</a>, get his code on <a href="https://github.com/garybernhardt">Github</a>, and buy his screencasts at <a href="https://www.destroyallsoftware.com/">Destroy All Software</a>.</p>
-<h2>Phew</h2>
-<p>It&#8217;s taken me 3 days to write this up. What&#8217;s crazy is that this list is really only a small fraction of the people who deserve thanks. I tried to meet as many people as I could while at my first RubyConf, and I did a pretty good job. I didn&#8217;t get to meet and thank you all though, but there&#8217;s always next year.</p>
-<p>If you meet somebody on this list, thank them. If you meet somebody off the list and they are contributing positively to whatever community they are a part of, thank them. Give them a handshake or a hug, buy them a drink, and thank them.</p>
-<p><strong>They deserve it.</strong></p>
-<p>To everybody on this list, to everybody I met at RubyConf, to everybody I haven&#8217;t met yet, <strong>thank you.</strong></p>
+RubyConf 2012 is at an end, and what a time it was. This was my first conference, and it was all thanks to my employer [Yardstick](http://getyardstick.com/). If it wasn’t for them, I probably wouldn’t have been able to come, learn so much, and meet so many great people.
+
+[My mission](/2012/10/27/my-rubyconf-mission-thank-all-the-people) was to thank as many people as possible, in person. Open source is somewhat of a thankless job. Lots of people using your code or what have you, and never receiving thanks for it.
+
+While I didn’t get to meet and thank everybody I wanted to, I did get to quite a few of you. In no particular order…
+
+<a href="{{.matz.original}}"><img src="{{.matz.medium}}" class="fright bleft bbottom" alt="Matz" /></a>
+
+## Yukihiro “Matz” Matsumoto
+
+Matz is the reason we were all there. In 1993, Matz started working on
+what would become ruby. In December of 1995 it was first released. Ruby
+1.8 came out in 2003.
+
+Currently, he works full time on ruby for Heroku. Basically, he gets to do what he loves, and Heroku signs the cheques.
+
+Domo arigato Matsumoto-san. Ruby makes many people’s lives better, and the world is a better place for having it. It was a pleasure meeting you and hearing your keynote. I hope we meet again in the future.
+
+<a href="{{.tenderlove.original}}"><img src="{{.tenderlove.medium}}" class="fright bleft bbottom" alt="Aaron Patterson" /></a>
+
+## Aaron “Tenderlove” Patterson
+
+Aaron is a beacon of positivity in the ruby community. He’s always wearing a smile and I’m pretty sure the only reason he stops working is because [his cat](https://twitter.com/gorbypuff) is sitting on his
+keyboard.
+
+He works for AT&T on open source, similar to Matz. He works on
+rails-core and ruby-core, and has an impressive array of project on
+[Github](https://github.com/tenderlove). Chances are you’ve run code
+he’s written.
+
+[Follow him on Twitter](https://twitter.com/tenderlove) and give him a
+hug.
+
+Thanks Aaron for all the work you do, code you write, knowledge you drop
+on us on [your blog](http://tenderlovemaking.com/), and your positive
+attitude. It makes the community better, and encourages us all to be
+better.
+
+<a href="{{.weirich.original}}"><img src="{{.weirich.medium}}" class="fright bleft bbottom" alt="Jim Weirich" /></a>
+
+## Jim Weirich
+
+You’ve used Jim Weirich’s code. Yes you have. You know [rake](http://rake.rubyforge.org/)? Yeah, that was Jim. He also made the [builder gem](http://builder.rubyforge.org/) for doing XML generation. [flexmock](http://flexmock.rubyforge.org/) is another one of his that you might use.
+
+He always gives great presentations at conferences (go watch the videos), and is never greedy when it comes to knowledge and source code.
+
+These [two](https://twitter.com/darkhelmetlive/status/264761788682358785) [tweets](https://twitter.com/djspinmonkey/status/264813508301058049) pretty much cover it.
+
+Thanks Jim for the great talk, the hug, and all the work you’ve done and
+given to the ruby community. It wouldn’t be the same without you.
+
+Thank Jim yourself on [his Twitter](https://twitter.com/jimweirich) or
+on [his blog](http://onestepback.org/). See what other code he’s shared
+on [his Github](https://github.com/jimweirich).
+
+## Charles Nutter, Tom Enebo, Nick Sieger
+
+<a href="{{.jruby.original}}"><img src="{{.jruby.medium}}" class="fright bleft bbottom" alt="jRuby" /></a>
+
+Charlie (center), Tom (left) and Nick (below with Corey Haines) are a few of the [JRuby](http://jruby.org/) core developers. You know, that popular ruby implementation on the JVM with some crazy performance numbers? Yeah that one. Without these smart people on the JRuby team (and also Ola Bini who wasn’t present at RubyConf), JRuby would probably just be old abandoned project not worth your time.
+
+Because of their hard work, JRuby is a force to reckoned with. Charles is also involved with JVM optimizations (I believe he was on two JSR committees), and puts out a lot of code to help get people up and running on JRuby.
+
+Thanks for all the hard work Charles, Tom, Nick (and Ola!). JRuby is an awesome positive project in the ruby community, and lots of people depend on it. You guys just keep making it better.
+
+Thank Charles on [Twitter](https://twitter.com/headius) or [his blog](http://blog.headius.com/) and get his code on [Github](https://github.com/headius).
+
+Find Tom on [Twitter](https://twitter.com/tom_enebo), [Github](https://github.com/enebo) or on [his blog](http://blog.enebo.com/).
+
+Nick Sieger is also on [Twitter](https://twitter.com/nicksieger), [Github](https://github.com/nicksieger) and has [a blog](http://blog.nicksieger.com/).
+
+Ola Bini has [Twitter](https://twitter.com/olabini), [Github](https://github.com/olabini), and [a blog](http://olabini.com/blog/).
+
+<a href="{{.img_0396.original}}"><img src="{{.img_0396.medium}}" class="fright bleft bbottom" alt="Corey Haines" /></a>
+
+## Corey Haines
+
+Corey (right, Nick Sieger left), like Aaron, is pure positivity. I’m convinced he can’t form a frown, but Sarah Gray assured me he does frown, but it’s only at poorly designed code.
+
+As an advocate of the “software craftsmanship” movement, he started [Code Retreat](http://coderetreat.org/). These are day long practice sessions to help software developers hone their craft with others.
+
+He’s all about becoming better, together.
+
+Thanks Corey. Your positivity is incredibly valuable, and the ruby community is lucky to have you. Your desire to become better and help us become better as a group is something the ruby community has and others don’t. That’s actually a little sad. Everybody community should have Corey Haines.
+
+You can find Corey on [Twitter](https://twitter.com/coreyhaines), [Github](https://github.com/coreyhaines), and [his website](http://coreyhaines.com/).
+
+<a href="{{.coby.original}}"><img src="{{.coby.medium}}" class="fright bleft bbottom" alt="Coby Randquist" /></a>
+
+## Coby Randquist
+
+Coby isn’t pumping out rubygems or ruby-core optimizations, so what does
+he do? You might not be familiar with the name, because Coby is behind
+the scenes. Specifically [Confreaks](http://www.confreaks.com/).
+
+All those videos that are online from ruby and other conferences **for
+free**. Coby’s company produces those. At RubyConf he and his crew were
+running around between 4 different rooms, recording and live streaming
+all the talks on Justin.tv.
+
+It took a while for me to talk to Coby and thank him, because he was
+always on his game and making sure things were working. If you get the
+chance, shake his hand and give him the props he deserves.
+
+Thanks Coby for all the videos! Thank him yourself on [Twitter](https://twitter.com/kobier) and [his blog](http://randquist.us/blog/).
+
+<a href="{{.helmkamp.original}}"><img src="{{.helmkamp.medium}}" class="fright bleft bbottom" alt="Bryan Helmkamp" /></a>
+
+## Bryan Helmkamp
+
+Bryan developed the [rack-bug](https://github.com/brynary/rack-bug) gem
+which gives you insight into your application when things just aren’t
+working the way they’re supposed to.
+
+More recently, he founded [Code Climate](https://codeclimate.com/) which
+does hosted software metrics for ruby applications. It’s a business so
+you’ll pay for private projects, but for all your open source stuff it’s
+nice and free. Head over to the
+[Explore](https://codeclimate.com/explore) page to see some of those
+projects and add your own.
+
+The similarity between these two projects is that they aren’t for Bryan;
+they’re for us. They help us debug our software and make it better. They
+encourage better code and generally improve the ruby community. Thanks
+Bryan!
+
+Find him on [Github](https://github.com/brynary) and [Twitter](https://twitter.com/brynary).
+
+<a href="{{.hunt.original}}"><img src="{{.hunt.medium}}" class="fright bleft bbottom" alt="Chris Hunt" /></a>
+
+## Chris Hunt
+
+Chris Hunt gave a great talk on Service Oriented Architecture at Square.
+One of the best parts was all the links to [public Github
+repositories](https://github.com/square) that Square has released.
+
+Chris Hunt and Square are shipping like bosses, and it’s making our
+community better. Things like [cane](https://github.com/square/cane) and
+[fdoc](https://github.com/square/fdoc) are fantastic. Outside of the
+ruby community they have Android/Java projects.
+
+They are giving it all back. Thanks Chris, and thanks Square!
+
+Find Chris on [Twitter](https://twitter.com/chrishunt), at [his website](http://chrishunt.co/), and on [Github](https://github.com/chrishunt).
+
+<a href="{{.loren.original}}"><img src="{{.loren.medium}}" class="fright bleft bbottom" alt="Loren Segal" /></a>
+
+## Loren Segal
+
+Write documentation for your code. Pretty please? If you don’t, Loren
+Segal will find you. He’s Canadian though, so he’ll probably just ask
+you nicely if you could write docs. I think your kneecaps are safe.
+
+He’s the brains behind the [yard gem](https://github.com/lsegal/yard) for documenting your ruby code. It powers [http://rdoc.info/](http://rdoc.info/) which is where I go for all my documentation needs.
+
+When I thanked Loren, he gave this sigh of relief. You should thank him
+too, and you should probably use yard to document your ruby code. He
+also gave a talk at RubyConf, so check out the video when it’s up.
+Thanks Loren!
+
+He can be found on [Twitter](https://twitter.com/lsegal),
+[Github](https://github.com/lsegal), and [gnuu.org](http://gnuu.org/).
+
+<a href="{{.perham.original}}"><img src="{{.perham.medium}}" class="fright bleft bbottom" alt="Mike Perham" /></a>
+
+## Mike Perham
+
+Mike is all about concurrency on ruby. Some of his work includes
+[sidekiq](http://mperham.github.com/sidekiq/),
+[girl_friday](https://github.com/mperham/girl_friday), and
+[rack-fiber_pool](https://github.com/mperham/rack-fiber_pool). Sidekiq
+is a job queue similar to [Resque](https://github.com/defunkt/resque)
+but instead of processes it uses threads. girl_friday gives you an
+in-process job queue, and rack-fiber_pool runs requests in ruby fibers,
+which if used properly can work quite well.
+
+He also wrote the [dalli](https://github.com/mperham/dalli) gem, a fast
+pure ruby memcached client. Give some of those gems a try. You won’t be
+disappointed!
+
+Thanks for all the code Mike! Keep on pushing concurrency to new levels.
+
+His RubyConf talk will also be on Confreaks, but until then, find him on [Twitter](https://twitter.com/mperham), [Github](https://github.com/mperham), [his blog](http://www.mikeperham.com/) and buy cool gear at [The Clymb](https://www.theclymb.com/) (only US, makes me a sad panda).
+
+<a href="{{.storimer.original}}"><img src="{{.storimer.medium}}" class="fright bleft bbottom" alt="Jesse Storimer" /></a>
+
+## Jesse Storimer
+
+Jesse is a fellow Canadian, and in recent times a budding, nay,
+accomplished author. He’s written two books to bring lower level
+techniques such as forking, IPC, and TCP sockets to ruby developers.
+
+For a lot of the ruby community, the C programming language is
+completely foreign. Along with it go things like fork/exec, IPC, and raw
+TCP socket knowledge. Jesse brings these topics together in [two
+books](http://workingwithcode.com/): Working With UNIX Processes and
+Working With TCP Sockets. These are important topics and will help you
+understand your development stack and write better code, even if you
+never actually use the techniques in your app. They’ll definitely make
+you think!
+
+Get your fork on and level up your UNIX beard, and buy his books.
+Seriously. He stepped it up a bit with the newest one as for a little
+bit more money you can get an hour long screencast on building an
+evented IO server.
+
+Thanks Jesse for the great resources, and thanks for the signed copy!
+
+He’s all up on [Twitter](https://twitter.com/jstorimer), [Github](https://github.com/jstorimer), and [his blog](http://jstorimer.com/). Also, he is not [Chad Kroeger]({{.kroeger.original}})
+
+<a href="{{.scofield.original}}"><img src="{{.scofield.medium}}" class="fright bleft bbottom" alt="Ben Scofield" /></a>
+
+## Ben Scofield
+
+Ben is the man behind the curtains at RubyConf. Along with Evan Phoenix
+handling MC duties and his army of volunteers, Ben makes sure RubyConf
+happens, and happens without anything lighting on fire.
+
+His [Github](https://github.com/bscofield) account isn’t as active as a
+lot of rubyists, but he’s got other things on his mind. He also handles
+RailsConf since it’s a [Ruby Central](http://www.rubycentral.org/)
+thing.
+
+Without Ben, RubyConf probably wouldn’t have happened, or Evan’s head
+would have exploded. Running a conference isn’t something you can do on
+your own, but Ben and Evan made a pretty good team. Thanks for the
+conference guys! It was great!
+
+You’ll find Ben on [his blog](http://benscofield.com/) or on [Twitter](https://twitter.com/bscofield).
+
+<a href="{{.phoenix.original}}"><img src="{{.phoenix.medium}}" class="fright bleft bbottom" alt="Evan Phoenix" /></a>
+
+## Evan Phoenix
+
+I mentioned Evan Phoenix just a second ago along with Ben Scofield. Evan
+is a director on Ruby Central, and was instrumental in RubyConf
+happening the way it did. He MC’d the event, and was always around to
+make sure things were going smoothly.
+
+On top of that, he works on [Rubinius](http://rubini.us/), that other
+awesome ruby implementation with real threads and no GIL, and the [puma
+webserver](http://puma.io/). These are both great projects, and give
+ruby developers (along with JRuby) a truly concurrent virtual machine
+ready for the next generation of applications.
+
+If that wasn’t enough, he was ear to ear smiles the whole time I saw him
+at RubyConf. Thanks for all the code Evan, and thanks for the positive
+attitude.
+
+Find Evan on [Twitter](https://twitter.com/evanphx), [Github](https://github.com/evanphx) and on [his blog](http://blog.fallingsnow.net/).
+
+<a href="{{.ford.original}}"><img src="{{.ford.medium}}" class="fright bleft bbottom" alt="Brian Ford" /></a>
+
+## Brian Ford
+
+Brian Ford, along with Evan, works on [Rubinius](http://rubini.us/).
+Rubinius stays on the leading edge of ruby thanks to the hard work Brian
+puts in. You really should take a serious look at. It’s ahead of the
+curve and deserves more attention than it gets. Real threads, no GIL,
+and a lot of the core libraries and tools are written in ruby itself.
+What’s not to love?
+
+Other languages also target the VM, which is built with other languages
+in mind. It’s not *just* a ruby VM.
+
+Next time you see Brian, go off to your computer and install rubinius,
+play with it, run your app on it, report bugs and offer patches. Then go
+buy him a whiskey. After his talk, of course. He gives great talks.
+Thanks Brian!
+
+Head over to [Twitter](https://twitter.com/brixen), [Github](https://github.com/brixen), and [his blog](http://brixen.io/) to thank him.
+
+<a href="{{.susser.original}}"><img src="{{.susser.medium}}" class="fright bleft bbottom" alt="Josh Susser" /></a>
+
+## Josh Susser
+
+Josh gave a talk at RubyConf this year, and I probably should have gone,
+but the talk on racc was too tempting. I’ll probably watch the RubyConf
+video a few times and have my mind blown.
+
+On top of talking, he’s been blogging since February of 2006, on ruby,
+Rails, and a variety of other topics.
+
+You might also recognize Josh, his voice anyway, from the [Ruby Rogues
+podcast](http://rubyrogues.com/) where he is a regular with the other
+Rogues. Listen to that podcast if you don’t. It’s filled with good
+stuff. Thanks for all the knowledge Josh!
+
+Follow him on [Twitter](https://twitter.com/joshsusser), [his blog](http://blog.hasmanythrough.com/), or his [Github](https://github.com/joshsusser).
+
+<a href="{{.eleanor.original}}"><img src="{{.eleanor.medium}}" class="fright bleft bbottom" alt="Eleanor McHugh" /></a>
+
+## Eleanor McHugh
+
+Eleanor is true hacker. She’s like a British female _why. She does ruby
+and Go, plays with virtual machines, gives talks, and can dance up a
+storm.
+
+She moderated the lightning talks at RubyConf this year as well. She’s
+generally a positive force in whatever community she’s in.
+
+I highly recommend [her videos on Confreaks](http://www.confreaks.com/presenters/208-eleanor-mchugh) and [her slides on Slideshare](http://www.slideshare.net/feyeleanor). Thanks for all the knowledge Eleanor!
+
+Bug her on [Twitter](https://twitter.com/feyeleanor) and [Github](https://github.com/feyeleanor).
+
+## Yehuda Katz, Matt Aimonetti, Eric Hodel
+
+<a href="{{.img_0374.original}}"><img src="{{.img_0374.medium}}" class="fright bleft bbottom" /></a>
+
+From left to right we have Yehuda Katz, Aaron Patterson, Eric Hodel, and
+Matt Aimonetti. Where to start?
+
+Yehuda’s done Merb, Rails, [Handlebars](http://handlebarsjs.com/), [Thor](http://whatisthor.com/), [rack-offline](https://github.com/wycats/rack-offline), and [bundler](http://gembundler.com/).
+
+Find Yehuda on [Twitter](https://twitter.com/wycats), [Github](https://github.com/wycats), and [his blog](http://yehudakatz.com/).
+
+Matt’s done Merb, [Weasel-Diesel](https://github.com/mattetti/Weasel-Diesel), [MacRuby: The Definitive Guide](http://ofps.oreilly.com/titles/9781449380373/), [googlecharts](https://github.com/mattetti/googlecharts), [BubbleWrap](http://bubblewrap.io/), and about a billion other Github repos.
+
+Find Matt on [Twitter](https://twitter.com/merbist), [Github](https://github.com/mattetti), and [his blog](http://matt.aimonetti.net/).
+
+Eric? [Rubygems yo!](http://rubyforge.org/projects/rubygems/) **Drops the mic.**
+
+Find Eric on [Twitter](https://twitter.com/drbrain), [Github](https://github.com/drbrain), and [his blog](http://blog.segment7.net/)
+
+Thanks guys, for all the hard work you do, code you put out, articles and books you write, and talks you give. Thank you.
+
+<a href="{{.mei.original}}"><img src="{{.mei.medium}}" class="fright bleft bbottom" alt="Sarah Mei" /></a>
+
+## Sarah Mei
+
+This year at RubyConf, Sarah Mei gave the first female keynote. She
+dropped the mic and the roof blew off the convention center.
+
+When she’s not wowing audiences, she’s writing ruby for the [Diaspora
+project](https://joindiaspora.com/) and organizes [Rails workshops for
+women](http://workshops.railsbridge.org/). She’s improving the ruby,
+Rails, and social networking communities, and getting more women into
+programming.
+
+**Like a boss.** Thanks Sarah!
+
+Give Sarah mad props at [her blog](http://www.sarahmei.com/blog/), on [Twitter](https://twitter.com/sarahmei), and on [Github](https://github.com/sarahmei).
+
+<a href="{{.gary.original}}"><img src="{{.gary.medium}}" class="fright bleft bbottom" alt="Gary Bernhardt" /></a>
+
+## Gary Bernhardt
+
+Gary drops knowledge like bombs with his [Destroy All
+Software](https://www.destroyallsoftware.com/) screencasts and his
+talks. He gave a great one at RubyConf. Watch the video if you didn’t
+get to see it. Hell, watch it even if you did.
+
+He also likes to [troll us all](https://github.com/garybernhardt/base)
+once in a while. But he educates and trolls with a little smirk and it
+makes us all giggle a little bit. He brings joy, knowhow, and
+entertainment in one fantastically well dressed package. Thanks Gary!
+
+Tweet Gary on [Twitter](https://twitter.com/garybernhardt), get his code
+on [Github](https://github.com/garybernhardt), and buy his screencasts
+at [Destroy All Software](https://www.destroyallsoftware.com/).
+
+## Phew
+
+It’s taken me 3 days to write this up. What’s crazy is that this list is
+really only a small fraction of the people who deserve thanks. I tried
+to meet as many people as I could while at my first RubyConf, and I did
+a pretty good job. I didn’t get to meet and thank you all though, but
+there’s always next year.
+
+If you meet somebody on this list, thank them. If you meet somebody off
+the list and they are contributing positively to whatever community they
+are a part of, thank them. Give them a handshake or a hug, buy them a
+drink, and thank them.
+
+**They deserve it.**
+
+To everybody on this list, to everybody I met at RubyConf, to everybody
+I haven’t met yet, **thank you.**
