@@ -52,8 +52,7 @@ steam. It quickly became one of, if not the most popular
 micro-framework, even sticking its nose into the Rails world with Metal
 routers:
 
-[Rails Metal, Rack, and
-Sinatra](http://www.slideshare.net/adamwiggins/rails-metal-rack-and-sinatra)
+<iframe src="http://www.slideshare.net/slideshow/embed_code/1395901" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/adamwiggins/rails-metal-rack-and-sinatra" title="Rails Metal, Rack, and Sinatra" target="_blank">Rails Metal, Rack, and Sinatra</a> </strong> from <strong><a href="http://www.slideshare.net/adamwiggins" target="_blank">Adam Wiggins</a></strong> </div>
 
 I personally love Sinatra. It's small, allows you make fast, simple (and
 even more complex) web applications, with minimal hassle. This blog runs
@@ -97,7 +96,7 @@ experience. It also has an object persistence system so that multiple
 ruby application can access shared resources with the need of a separate
 database. It looks pretty slick, and I'm excited about it.
 
-[MagLev presentation at RailsConf 2008](http://vimeo.com/1147409)
+<iframe src="//player.vimeo.com/video/1147409" width="500" height="377" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/1147409">MagLev presentation at RailsConf 2008</a> from <a href="http://vimeo.com/montywilliams">Monty Williams</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ### Rubinius
 
@@ -108,8 +107,7 @@ and is pretty fast. It's gaining quite a following and once it hits 1.0
 it will be a solid contender, possibly pushing out REE as 'the other
 ruby VM'.
 
-[Rubinius - RubyConf
-2009](http://www.slideshare.net/evanphx/rubyconf-2009)
+<iframe src="http://www.slideshare.net/slideshow/embed_code/2578151" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/evanphx/rubyconf-2009" title="RubyConf 2009" target="_blank">RubyConf 2009</a> </strong> from <strong><a href="http://www.slideshare.net/evanphx" target="_blank">evanphx</a></strong> </div>
 
 ### IronRuby
 
@@ -125,7 +123,7 @@ problem, even if the problem requires different languages. IronRuby also
 allows ruby to be used in other .NET application, so you could write a
 C# app, and throw some ruby in. Sweet!
 
-[IronRuby](http://www.slideshare.net/BenHalluk/ironruby)
+<iframe src="http://www.slideshare.net/slideshow/embed_code/1736234" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/BenHalluk/ironruby" title="IronRuby" target="_blank">IronRuby</a> </strong> from <strong><a href="http://www.slideshare.net/BenHalluk" target="_blank">Ben Hall</a></strong> </div>
 
 ### MacRuby
 
@@ -147,8 +145,7 @@ language, meant for the same type of thing you'd use C for. There's lots
 of development happening with it, so it's moving fast. I am definitely
 going to leverage this language where appropriate.
 
-[The Go Programming
-Language](http://www.youtube.com/watch?v=rKnDgT73v8s&feature=player_embedded)
+<iframe width="640" height="360" src="//www.youtube.com/embed/rKnDgT73v8s" frameborder="0" allowfullscreen></iframe>
 
 OMG Rob Pike! \*squeeee\*
 

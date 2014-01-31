@@ -94,7 +94,7 @@ In my example above from Yardstick, I would have typed `./prepare.sh ys`
 
 ## DROP THE BASS!!!
 
-[Skrillex - Cinema](http://www.youtube.com/watch?v=k6lVhGeyXuw&t=1m18s)
+<iframe width="640" height="360" src="//www.youtube.com/embed/k6lVhGeyXuw" frameborder="0" allowfullscreen></iframe>
 
 <pre>
 Brrrrrrrrrrr........

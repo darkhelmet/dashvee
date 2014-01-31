@@ -17,8 +17,9 @@ tags:
 I was doing some optimizing the other day on a Rails 2.3.x application
 with a metal controller. I didn't feel like writing a straight rack
 application, so I used sinatra. A pretty good explanation of how this
-works can be seen in Adam Wiggins' slides, [Rails Metal, Rack, and
-Sinatra](http://www.slideshare.net/adamwiggins/rails-metal-rack-and-sinatra)
+works can be seen in Adam Wiggins' slides:
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/1395901" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/adamwiggins/rails-metal-rack-and-sinatra" title="Rails Metal, Rack, and Sinatra" target="_blank">Rails Metal, Rack, and Sinatra</a> </strong> from <strong><a href="http://www.slideshare.net/adamwiggins" target="_blank">Adam Wiggins</a></strong> </div>
 
 In Rails 3, they still have *metal* controllers, in that the
 `ActionController::Metal` class is essentially a really thin controller,

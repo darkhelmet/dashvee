@@ -8,6 +8,4 @@
 //= require ./jquery.darkblog
 //= require ./jquery.easing-1.3.pack
 //= require ./jquery.fancybox
-//= require ./handlebars
-//= require ./jquery.embedly
 //= require ./darkblog

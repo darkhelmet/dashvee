@@ -55,5 +55,4 @@ when it hits your screen.
 
 Less work for me (in the long run), more awesome for you.
 
-[Job For A Cowboy - Unfurling A Darkened
-Gospel](http://www.youtube.com/watch?v=nl-qaTmazB0&feature=player_embedded)
+<iframe width="640" height="360" src="//www.youtube.com/embed/nl-qaTmazB0" frameborder="0" allowfullscreen></iframe>

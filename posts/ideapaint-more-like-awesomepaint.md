@@ -16,8 +16,7 @@ tags:
 ---
 If anybody needs a last minute gift idea for me, this is it.
 
-[IdeaPaint Installation
-Video](http://www.youtube.com/watch?v=WQXjaI4BeWw&feature=player_embedded)
+<iframe width="640" height="360" src="//www.youtube.com/embed/WQXjaI4BeWw" frameborder="0" allowfullscreen></iframe>
 
 Are you kidding me? One coat of this stuff and I can turn a wall into a
 whiteboard? Not only a whiteboard, but one of the highest performing

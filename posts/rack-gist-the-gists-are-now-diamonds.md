@@ -19,18 +19,37 @@ images:
     medium: http://cdn.verboselogging.com/transloadit/medium/66/554bfe62029624eb1917cead90df38/recursive-hasselhoff.gif
     large: http://cdn.verboselogging.com/transloadit/large/82/8525fa07baffbfb4a4019ef85886fa/recursive-hasselhoff.gif
 ---
-<p>Hello developers, how are you? Fantastic.</p>
-<p>Does your code look like mine? <strong>No.</strong></p>
-<p>Could it load like mine? <strong>Yes.</strong></p>
-<p>Should you use <a href="http://github.com/darkhelmet/rack-gist">rack-gist</a> to load your <a href="http://gist.github.com/">gists</a>? I don&#8217;t know&#8230;</p>
-<p>Do you like not blocking your users while you page loads another Javascript file?</p>
-<p>Do you want code that looks like it could write your app for you in the dream computer it built for you with its own <code>DWORDS</code>?</p>
-<p>Of course you do.</p>
-<h4>Recursive Hasselhoff!</h4>
-<p><figure><img src="http://cdn.verboselogging.com/uploads/rack-gist-the-gists-are-now-diamonds/recursive-hasselhoff.gif" class="" alt="" /></figure></p>
-<p>Into the best gisting of your life.</p>
-<p>So developers, should your code load like <code>rack-gist</code>&#8217;d code?</p>
-<p>You tell me&#8230;</p>
-<p>If you&#8217;re still here, you can use <code>Rack::Gist</code> to load Github Gists asynchronously so as to not block your users. Get all your goodness at <a href="http://github.com/darkhelmet/rack-gist">http://github.com/darkhelmet/rack-gist</a>.</p>
-<p><a href="http://www.youtube.com/watch?v=uLTIowBF0kE">Old Spice &#8211; Questions</a></p>
-<p>Can you tell I&#8217;ve been watching <strong>way</strong> too many internet videos lately?</p>
+Hello developers, how are you? Fantastic.
+
+Does your code look like mine? **No.**
+
+Could it load like mine? **Yes.**
+
+Should you use [rack-gist](http://github.com/darkhelmet/rack-gist) to
+load your [gists](http://gist.github.com/)? I don’t know…
+
+Do you like not blocking your users while you page loads another
+Javascript file?
+
+Do you want code that looks like it could write your app for you in the
+dream computer it built for you with its own `DWORDS`?
+
+Of course you do.
+
+#### Recursive Hasselhoff!
+
+![]({{.recursive_hasselhoff.original}})
+
+Into the best gisting of your life.
+
+So developers, should your code load like `rack-gist`’d code?
+
+You tell me…
+
+If you’re still here, you can use `Rack::Gist` to load Github Gists
+asynchronously so as to not block your users. Get all your goodness at
+[http://github.com/darkhelmet/rack-gist](http://github.com/darkhelmet/rack-gist).
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/uLTIowBF0kE" frameborder="0" allowfullscreen></iframe>
+
+Can you tell I’ve been watching **way** too many internet videos lately?

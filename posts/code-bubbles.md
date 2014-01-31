@@ -18,5 +18,4 @@ This is seriously cool, and makes me want to write Java code. I'd at
 least like to try it out. Read up on it at
 [codebubbles.org](http://codebubbles.org/).
 
-[Code Bubbles: Rethinking the User Interface Paradigm of Integrated
-Development Environments](http://www.youtube.com/watch?v=PsPX0nElJ0k)
+<iframe width="640" height="360" src="//www.youtube.com/embed/PsPX0nElJ0k" frameborder="0" allowfullscreen></iframe>

@@ -16,5 +16,4 @@ tags:
 ---
 Cool talk about Xbox hardware security.
 
-[The Xbox 360 Security System and its
-Weaknesses](http://www.youtube.com/watch?v=uxjpmc8ZIxM&feature=player_embedded)
+<iframe width="640" height="360" src="//www.youtube.com/embed/uxjpmc8ZIxM" frameborder="0" allowfullscreen></iframe>

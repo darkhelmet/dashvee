@@ -18,5 +18,4 @@ tags:
 It's an older talk, but it's still awesome. If you've never heard of git
 before, [check it out.](http://git-scm.com)
 
-[Tech Talk: Linus Torvalds on
-git](http://www.youtube.com/watch?v=4XpnKHJAok8&feature=player_embedded)
+<iframe width="640" height="360" src="//www.youtube.com/embed/4XpnKHJAok8" frameborder="0" allowfullscreen></iframe>

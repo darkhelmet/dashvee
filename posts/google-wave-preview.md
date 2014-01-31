@@ -16,5 +16,4 @@ tags:
 ---
 Google Wave Preview. Awesome.
 
-[Google Wave Developer Preview at Google I/O
-2009](http://www.youtube.com/watch?v=v_UyVmITiYQ&feature=player_embedded)
+<iframe width="640" height="360" src="//www.youtube.com/embed/v_UyVmITiYQ" frameborder="0" allowfullscreen></iframe>

@@ -16,5 +16,4 @@ tags:
 ---
 Found this in my RSS feeds today. Awesome.
 
-[Intel: We Are
-Rockstars](http://www.youtube.com/watch?v=jqLPHrCQr2I&feature=player_embedded)
+<iframe width="640" height="360" src="//www.youtube.com/embed/jqLPHrCQr2I" frameborder="0" allowfullscreen></iframe>

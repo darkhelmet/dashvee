@@ -8,8 +8,6 @@ $.getScriptLite = (src) ->
     $('head').get(0).appendChild(script)
 
 $ ->
-    Embedly.defaults.key = 'fd17fbebd90947588f7bbf26f04bceea'
-
     fancyBoxEffects =
         openEffect: 'elastic'
         openEasing: 'easeOutBack'
@@ -17,26 +15,6 @@ $ ->
         closeEasing: 'easeInBack'
 
     $('.content a:regex(href, png|jpe?g|gif)').fancybox(fancyBoxEffects)
-
-    $('.content a').embedly
-        re: /(youtube|vimeo)\.com/i
-        maxWidth: 640
-        wmode: 'opaque'
-
-    $('.content a.twitter').embedly
-        re: /twitter\.com/i
-        maxWidth: 640
-
-    $('.content a').embedly
-        re: /slideshare\.net/i
-        maxWidth: 640
-
-    $('.content a').embedly re: /twitter\.com/i, (oembed, elem) ->
-        $(elem).attr('title', oembed.description)
-        $(elem).click ->
-            div = $('<div class="embedly" />', html: oembed.code)
-            $.fancybox(div, fancyBoxEffects)
-            false
 
     if document.getElementsByTagName('plusone').length > 0
         $('plusone').replaceWith('<g:plusone size="medium"></g:plusone>')

@@ -16,4 +16,4 @@ tags:
 ---
 Somebody needs to make this. I would be on this like white on rice.
 
-[10/GUI](http://vimeo.com/6712657)
+<iframe src="//player.vimeo.com/video/6712657" width="500" height="275" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/6712657">10/GUI</a> from <a href="http://vimeo.com/user1415432">C. Miller</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
