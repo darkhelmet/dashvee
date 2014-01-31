@@ -25,7 +25,7 @@ I did that originally, but frankly, I'd rather be working on my app than the inf
 
 ## Heroku to the rescue
 
-As you might know, I'm a big fan of [Heroku](http://blog.darkhax.com/search?q=heroku). This blog runs on it, and I don't have to ever think about it. It. Just. Works.™
+As you might know, I'm a big fan of [Heroku](/search?query=heroku). This blog runs on it, and I don't have to ever think about it. It. Just. Works.™
 
 Now, there's nothing wrong with EngineYard, but I want to deal with as little infrastructure crap (or at least the boring parts) as possible, and Heroku lets me do that. Plus, I get some things for free, like NewRelic RPM.
 
