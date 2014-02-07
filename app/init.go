@@ -113,6 +113,7 @@ func init() {
 
     revel.OnAppStart(func() {
         handler := revel.Server.Handler
+        handler = webutil.GzipHandler{handler}
         handler = webutil.CanonicalHostHandler{handler, config.CanonicalHost, "http"}
         handler = webutil.EnsureRequestBodyClosedHandler{handler}
         revel.Server.Handler = handler
