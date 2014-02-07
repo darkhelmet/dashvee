@@ -15,7 +15,7 @@
                 <pubDate>{{.PublishedOn | RFC822 }}</pubDate>
                 <link>{{PostCanonical . | CanonicalUrl}}</link>
                 <guid>{{PostCanonical . | CanonicalUrl}}</guid>
-                <author>{{.Author}}</author>
+                <author>{{.SiteContact}} ({{.SiteAuthor}})</author>
                 <description>
                     {{`<![CDATA[` | HTML }}{{.HTML}}]]>
                 </description>

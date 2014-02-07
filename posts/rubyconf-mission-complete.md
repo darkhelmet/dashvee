@@ -126,7 +126,7 @@ images:
 ---
 RubyConf 2012 is at an end, and what a time it was. This was my first conference, and it was all thanks to my employer [Yardstick](http://getyardstick.com/). If it wasn’t for them, I probably wouldn’t have been able to come, learn so much, and meet so many great people.
 
-[My mission](/2012/10/27/my-rubyconf-mission-thank-all-the-people) was to thank as many people as possible, in person. Open source is somewhat of a thankless job. Lots of people using your code or what have you, and never receiving thanks for it.
+[My mission](http://verboselogging.com/2012/10/27/my-rubyconf-mission-thank-all-the-people) was to thank as many people as possible, in person. Open source is somewhat of a thankless job. Lots of people using your code or what have you, and never receiving thanks for it.
 
 While I didn’t get to meet and thank everybody I wanted to, I did get to quite a few of you. In no particular order…
 
