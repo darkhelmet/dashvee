@@ -139,7 +139,7 @@ func (t AppTest) TestPage() {
     t.Get("/about")
     t.AssertOk()
     t.AssertContentType("text/html; charset=utf-8")
-    t.AssertContains("I am a software engineer")
+    t.AssertContains("My name is Daniel Huckstep, and I'm a software engineer")
 }
 
 func (t AppTest) TestNotFoundPage() {
