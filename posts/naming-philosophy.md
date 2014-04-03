@@ -4,7 +4,7 @@ title: The Philosophy of Naming Variables
 category: software
 description: Russ Cox and variable naming
 published: true
-publishedon: 3 April 2014 10:00 MDT
+publishedon: 3 April 2014 10:00 MST
 slugs:
 - philosophy-of-naming-variables
 tags:
