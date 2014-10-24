@@ -6,7 +6,7 @@ branches:
     only:
         - master
 install:
-    - travis_retry go get -v github.com/robfig/revel/revel
+    - travis_retry go get -v github.com/revel/revel/revel
     - export PATH=$HOME/gopath/bin:$PATH
     - travis_retry go get -v github.com/darkhelmet/dashvee/app
     - travis_retry go get -v github.com/darkhelmet/dashvee/app/controllers

@@ -2,7 +2,7 @@ package tests
 
 import (
 	"github.com/darkhelmet/dashvee/app/controllers"
-	"github.com/robfig/revel"
+	"github.com/revel/revel"
 )
 
 type AppTest struct {

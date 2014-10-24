@@ -9,8 +9,8 @@ import (
 
 	"github.com/darkhelmet/blargh/errors"
 	"github.com/darkhelmet/blargh/post"
-	"github.com/robfig/revel"
-	static "github.com/robfig/revel/modules/static/app/controllers"
+	"github.com/revel/revel"
+	static "github.com/revel/revel/modules/static/app/controllers"
 )
 
 type PageLink struct {

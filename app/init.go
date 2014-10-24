@@ -16,7 +16,7 @@ import (
 	"github.com/darkhelmet/blargh/post"
 	"github.com/darkhelmet/dashvee/app/config"
 	"github.com/darkhelmet/webutil"
-	"github.com/robfig/revel"
+	"github.com/revel/revel"
 )
 
 type Formatter interface {
