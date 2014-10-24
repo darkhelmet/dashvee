@@ -12,7 +12,7 @@ slugs:
 
 <p><img src="http://cf.verboselogging.com/assets/images/headshot-c061a5cc2537c9cb00b82fd6670eb4c4.jpg" class="round medium fright bleft bbottom hover" alt="Headshot of Daniel Huckstep" /></p>
 
-My name is Daniel Huckstep, and I'm a software engineer ([EIT](http://www.apegga.org/applicants/Engineers/mit.html")) in Edmonton, Alberta, Canada. I enjoy all kinds of programming, even assembly (sometimes).
+My name is Daniel Huckstep, and I'm a software problem solver in Edmonton, Alberta, Canada. I enjoy all kinds of programming, even assembly (sometimes).
 
 * <a href="http://www.ualberta.ca/">University of Alberta</a> graduate (Software Engineering, 2009)
 * [APEGA](http://www.apegga.org/) [Engineer-in-Training](http://www.apegga.org/applicants/Engineers/mit.html)
@@ -24,7 +24,7 @@ My name is Daniel Huckstep, and I'm a software engineer ([EIT](http://www.apegga
 * Lord of the jungle (now just some finches and a ferret)
 * Movie critic
 
-I enjoy good food, better wine, quality cigars, and [badass pipes](http://www.lorenzettipipe.com/). I work hard and play hard. I get the job done, and get it done right, the first time. I speak my mind and listen when others speak theirs.
+I enjoy good food, better wine, accurate watches, quality cigars, and [badass pipes](http://www.lorenzettipipe.com/). I work hard and play hard. I get the job done, and get it done right, the first time. I speak my mind and listen when others speak theirs.
 
 I work for [Yardstick](http://www.getyardstick.com/).
 
