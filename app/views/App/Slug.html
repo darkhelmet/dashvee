@@ -1,1 +1,4 @@
-Permalink.html
+{{PostCanonical .post | set . "canonical"}}
+{{template "before.html" .}}
+{{template "post.html" .post}}
+{{template "after.html" .}}

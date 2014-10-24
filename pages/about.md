@@ -12,7 +12,7 @@ slugs:
 
 <p><img src="http://cf.verboselogging.com/assets/images/headshot-c061a5cc2537c9cb00b82fd6670eb4c4.jpg" class="round medium fright bleft bbottom hover" alt="Headshot of Daniel Huckstep" /></p>
 
-My name is Daniel Huckstep, and I'm a software problem solver in Edmonton, Alberta, Canada. I enjoy all kinds of programming, even assembly (sometimes).
+My name is **Daniel Huckstep**, and I'm a **software problem solver** in **Edmonton, Alberta, Canada**. I enjoy all kinds of programming, even assembly (sometimes).
 
 * <a href="http://www.ualberta.ca/">University of Alberta</a> graduate (Software Engineering, 2009)
 * [APEGA](http://www.apegga.org/) [Engineer-in-Training](http://www.apegga.org/applicants/Engineers/mit.html)
