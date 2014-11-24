@@ -1,0 +1,85 @@
+{
+	"ImportPath": "github.com/darkhelmet/dashvee",
+	"GoVersion": "go1.3.1",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "bitbucket.org/tebeka/snowball",
+			"Comment": "0.2.0-2",
+			"Rev": "452d6d324dea7c5c802d45ecbda68ae34bcb46da"
+		},
+		{
+			"ImportPath": "code.google.com/p/go.net/html",
+			"Comment": "null-223",
+			"Rev": "5dedbdc181629d2f3557caf2667e60eb82c5e6d7"
+		},
+		{
+			"ImportPath": "code.google.com/p/go.net/websocket",
+			"Comment": "null-223",
+			"Rev": "5dedbdc181629d2f3557caf2667e60eb82c5e6d7"
+		},
+		{
+			"ImportPath": "github.com/agtorre/gocolorize",
+			"Rev": "f42b554bf7f006936130c9bb4f971afd2d87f671"
+		},
+		{
+			"ImportPath": "github.com/darkhelmet/blargh",
+			"Rev": "b46161ff0b402cf9fd2be0fa8e94ef8733b713f3"
+		},
+		{
+			"ImportPath": "github.com/darkhelmet/env",
+			"Rev": "d1827543acd996dc90693a2ae0b1a18e33e0df17"
+		},
+		{
+			"ImportPath": "github.com/darkhelmet/nltk",
+			"Rev": "444be77b43807aecf65e4b103f2095847150a95e"
+		},
+		{
+			"ImportPath": "github.com/darkhelmet/webutil",
+			"Rev": "acf28d511ecf624ee4d4824b49ae6faf2edd0900"
+		},
+		{
+			"ImportPath": "github.com/james4k/fmatter",
+			"Rev": "51620a0df28ea35b4478d5b2dd4a35144b117114"
+		},
+		{
+			"ImportPath": "github.com/nu7hatch/gouuid",
+			"Rev": "179d4d0c4d8d407a32af483c2354df1d2c91e6c3"
+		},
+		{
+			"ImportPath": "github.com/revel/revel",
+			"Comment": "v0.11.2",
+			"Rev": "7f4fb7444d9eb650e5f3b9b06a9d4c33ad15cd89"
+		},
+		{
+			"ImportPath": "github.com/robfig/config",
+			"Rev": "79f0cd1ab74d099b313aaddb83794d171140863a"
+		},
+		{
+			"ImportPath": "github.com/robfig/pathtree",
+			"Rev": "41257a1839e945fce74afd070e02bab2ea2c776a"
+		},
+		{
+			"ImportPath": "github.com/russross/blackfriday",
+			"Comment": "v1.2-21-g7c8f3c1",
+			"Rev": "7c8f3c1dcc7e0f87c62af34ee193fc3251f6d8a4"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Comment": "null-223",
+			"Rev": "5dedbdc181629d2f3557caf2667e60eb82c5e6d7"
+		},
+		{
+			"ImportPath": "gopkg.in/fsnotify.v1",
+			"Comment": "v1.0.4",
+			"Rev": "ca50e738d35a862c379baf8fffbc3bfd080b3cff"
+		},
+		{
+			"ImportPath": "launchpad.net/goyaml",
+			"Comment": "51",
+			"Rev": "gustavo@niemeyer.net-20140305200416-7gh64vkcckre5mob"
+		}
+	]
+}
