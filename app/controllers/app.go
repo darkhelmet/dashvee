@@ -43,7 +43,6 @@ func defaultRenderArgs(c *revel.Controller) revel.Result {
 	c.RenderArgs["SiteTitle"] = revel.Config.StringDefault("site.title", "")
 	c.RenderArgs["SiteAuthor"] = revel.Config.StringDefault("site.author", "")
 	c.RenderArgs["GoogleAnalytics"] = revel.Config.StringDefault("analytics.ga", "")
-	c.RenderArgs["Gauges"] = revel.Config.StringDefault("analytics.gauges", "")
 	c.RenderArgs["PageLinks"] = pageLinks
 	return nil
 }
