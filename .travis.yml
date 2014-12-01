@@ -7,8 +7,7 @@ branches:
 install:
   - go get github.com/tools/godep
   - godep restore
-  - go get -v ./...
-  - which revel
+  - go get -v -x ./...
 script: revel test github.com/darkhelmet/dashvee
 env:
   global:
