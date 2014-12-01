@@ -5,13 +5,10 @@ branches:
   only:
     - master
 install:
-  - tree /home/travis/gopath
-  - travis_retry go get github.com/tools/godep
-  - tree /home/travis/gopath
-  - travis_retry godep restore
-  - tree /home/travis/gopath
-  - travis_retry go get -v ./...
-  - tree /home/travis/gopath
+  - go get github.com/tools/godep
+  - godep restore
+  - go get -v ./...
+  - which revel
 script: revel test github.com/darkhelmet/dashvee
 env:
   global:
