@@ -6,7 +6,7 @@ branches:
     - master
 install:
   - travis_retry go get github.com/tools/godep
-  - travis_retry godep go restore
+  - travis_retry godep restore
 script: revel test github.com/darkhelmet/dashvee
 env:
   global:
