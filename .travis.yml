@@ -6,9 +6,8 @@ branches:
     - master
 install:
   - travis_retry go get github.com/tools/godep
+  - export GOPATH=`godep path`:$GOPATH
   - travis_retry godep go install -v ./...
-  - ls -lh $HOME/gopath/bin
-  - which revel
 script: revel test github.com/darkhelmet/dashvee
 env:
   global:
