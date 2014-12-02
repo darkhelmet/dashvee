@@ -5,4 +5,8 @@ set -x
 tag=$1
 docker build -t dashvee:latest .
 docker tag dashvee:latest dashvee:$tag
-docker restart $(docker ps | grep dashvee | cut -f1 -d' ')
+
+id=$(docker ps | grep dashvee | cut -f1 -d' ')
+docker stop $id
+docker run -d -p 80:80 dashvee:latest
+docker rm $id
