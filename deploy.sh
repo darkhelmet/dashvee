@@ -2,6 +2,7 @@
 set -e
 set -x
 
+git push
 ruby -r erb -e "print ERB.new(File.read('Dockerfile.erb')).result" > Dockerfile
 scp -q Dockerfile dashvee:Dockerfile
 scp -q rebuild.sh dashvee:rebuild.sh
