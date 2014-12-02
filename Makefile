@@ -15,8 +15,8 @@ Dockerfile:
 
 deploy: Dockerfile
 	scp Dockerfile dashvee:Dockerfile
-	ssh dashvee docker build -t dashvee .
-	ssh dashvee docker restart $(ssh dashvee "docker ps | grep dashvee | cut -f1 -d' '")
+	scp rebuild.sh dashvee:rebuild.sh
+	ssh dashvee ./rebuild.sh
 
 package:
 	revel package $(PKG) $(DIR)
