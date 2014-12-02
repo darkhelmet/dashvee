@@ -2,5 +2,7 @@
 set -e
 set -x
 
-docker build -t dashvee:$1 .
+tag=$1
+docker build -t dashvee:$tag .
+docker tag dashvee:$tag dashvee:latest
 # docker restart $(docker ps | grep dashvee | cut -f1 -d' ')
