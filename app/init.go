@@ -16,7 +16,6 @@ import (
 	"github.com/darkhelmet/blargh/post"
 	"github.com/darkhelmet/dashvee/app/config"
 	"github.com/darkhelmet/webutil"
-	_ "github.com/revel/cmd/revel"
 	"github.com/revel/revel"
 )
 

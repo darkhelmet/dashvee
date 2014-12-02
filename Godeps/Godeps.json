@@ -49,10 +49,6 @@
 			"Rev": "179d4d0c4d8d407a32af483c2354df1d2c91e6c3"
 		},
 		{
-			"ImportPath": "github.com/revel/cmd/revel",
-			"Rev": "6ea9d159b2fbc8eeaef540bca5b99ba48483b363"
-		},
-		{
 			"ImportPath": "github.com/revel/revel",
 			"Comment": "v0.11.2",
 			"Rev": "7f4fb7444d9eb650e5f3b9b06a9d4c33ad15cd89"
