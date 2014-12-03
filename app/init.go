@@ -108,12 +108,12 @@ func init() {
 		revel.RouterFilter,      // Use the routing table to select the right Action
 		revel.ParamsFilter,      // Parse parameters into Controller.Params.
 		revel.InterceptorFilter, // Run interceptors around the action.
-		revel.CompressFilter,    // Compress the result.
 		revel.ActionInvoker,     // Invoke the action.
 	}
 
 	revel.OnAppStart(func() {
 		handler := revel.Server.Handler
+		handler = webutil.KeyLoggerHandler{handler, log.New(os.Stdout, "", log.LstdFlags)}
 		handler = webutil.GzipHandler{handler}
 		handler = webutil.CanonicalHostHandler{handler, config.CanonicalHost, "http"}
 		handler = webutil.EnsureRequestBodyClosedHandler{handler}
