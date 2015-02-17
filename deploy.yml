@@ -1,0 +1,19 @@
+---
+- hosts: all
+  tasks:
+  - name: install pip
+    apt: name=python-pip
+  - name: install docker-py
+    pip: name=docker-py
+  - name: get latest image
+    command: docker pull darkhelmetlive/dashvee:latest
+  - name: run blog
+    docker: image=darkhelmetlive/dashvee:latest
+            name=dashvee-1
+            ports=80:80
+            state={{ item }}
+            restart_policy=on-failure
+            restart_policy_retry=3
+    with_items:
+    - absent
+    - running
