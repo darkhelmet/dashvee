@@ -10,4 +10,10 @@ assets:
 run:
 	revel run $(PKG)
 
+build:
+	docker build -t darkhelmetlive/dashvee:latest .
+
+push:
+	docker push darkhelmetlive/dashvee:latest
+
 .PHONY: assets

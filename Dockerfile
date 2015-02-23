@@ -3,13 +3,8 @@ FROM golang:1.4.2-wheezy
 RUN go get github.com/tools/godep
 RUN go get github.com/revel/cmd/revel
 
-ENV SHA <%= `git rev-parse --short HEAD`.strip %>
-
-RUN git clone https://github.com/darkhelmet/dashvee.git /go/src/github.com/darkhelmet/dashvee
-
+ADD . /go/src/github.com/darkhelmet/dashvee
 WORKDIR /go/src/github.com/darkhelmet/dashvee
-
-RUN git reset --hard $SHA
 
 RUN godep go install ./...
 
