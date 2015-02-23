@@ -5,6 +5,7 @@ RUN go get github.com/revel/cmd/revel
 
 ADD . /go/src/github.com/darkhelmet/dashvee
 WORKDIR /go/src/github.com/darkhelmet/dashvee
+RUN rm -rf Godeps/_workspace/bin Godeps/_workspace/pkg
 
 RUN godep go install ./...
 
