@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/revel"
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/revel/testing"
+	"github.com/revel/revel"
+	"github.com/revel/revel/testing"
 )
 
 // TestRunner is a controller which is used for running application tests in browser.

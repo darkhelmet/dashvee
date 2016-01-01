@@ -1,8 +1,8 @@
 package goyaml_test
 
 import (
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/launchpad.net/goyaml"
 	. "launchpad.net/gocheck"
+	"launchpad.net/goyaml"
 	"math"
 	"reflect"
 )

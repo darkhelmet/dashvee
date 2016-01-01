@@ -3,7 +3,7 @@ package filter
 import (
 	"strings"
 
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk"
+	"github.com/darkhelmet/nltk"
 )
 
 func Punctuation(in nltk.TokenChan) nltk.TokenChan {

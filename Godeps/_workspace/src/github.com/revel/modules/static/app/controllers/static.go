@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/revel"
+	"github.com/revel/revel"
 	"os"
 	fpath "path/filepath"
 	"strings"
@@ -73,6 +73,7 @@ func (c Static) ServeModule(moduleName, prefix, filepath string) revel.Result {
 
 	return serve(c, absPath, filepath)
 }
+
 
 // This method allows static serving of application files in a verified manner.
 func serve(c Static, prefix, filepath string) revel.Result {

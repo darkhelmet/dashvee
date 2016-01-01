@@ -1,7 +1,7 @@
 package revel
 
 import (
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/gopkg.in/fsnotify.v1"
+	"gopkg.in/fsnotify.v1"
 	"os"
 	"path"
 	"path/filepath"

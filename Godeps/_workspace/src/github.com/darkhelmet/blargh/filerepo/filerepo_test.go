@@ -1,11 +1,11 @@
 package filerepo_test
 
 import (
-	. "github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/errors"
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/filerepo"
-	. "launchpad.net/gocheck"
 	"testing"
 	"time"
+	. "github.com/darkhelmet/blargh/errors"
+	"github.com/darkhelmet/blargh/filerepo"
+	. "launchpad.net/gocheck"
 )
 
 func Test(t *testing.T) { TestingT(t) }

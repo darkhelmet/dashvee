@@ -9,7 +9,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk"
+	"github.com/darkhelmet/nltk"
 )
 
 func DoubleMetaphone(in nltk.TokenChan) nltk.TokenChan {

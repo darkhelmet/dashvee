@@ -1,7 +1,7 @@
 package post_test
 
 import (
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/post"
+	"github.com/darkhelmet/blargh/post"
 	. "launchpad.net/gocheck"
 )
 
