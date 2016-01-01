@@ -2,7 +2,7 @@ package revel
 
 import (
 	"errors"
-	"github.com/robfig/config"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/robfig/config"
 	"path"
 	"strings"
 )

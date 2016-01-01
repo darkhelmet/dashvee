@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/darkhelmet/env"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/env"
 )
 
 var (

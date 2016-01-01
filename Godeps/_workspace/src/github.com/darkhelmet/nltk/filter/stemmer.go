@@ -1,8 +1,8 @@
 package filter
 
 import (
-	"github.com/darkhelmet/nltk"
-	"github.com/darkhelmet/nltk/stemmer"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk/stemmer"
 )
 
 func stemmerFilter(in nltk.TokenChan, s stemmer.Stemmer) nltk.TokenChan {

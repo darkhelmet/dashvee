@@ -10,10 +10,10 @@ import (
 	TT "text/template"
 	"time"
 
-	"code.google.com/p/go.net/html"
-	"github.com/james4k/fmatter"
-	"github.com/nu7hatch/gouuid"
-	md "github.com/russross/blackfriday"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/code.google.com/p/go.net/html"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/james4k/fmatter"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/nu7hatch/gouuid"
+	md "github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/russross/blackfriday"
 )
 
 var ws = regexp.MustCompile(`\s+`)

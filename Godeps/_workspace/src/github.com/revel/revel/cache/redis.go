@@ -1,8 +1,8 @@
 package cache
 
 import (
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/revel"
 	"github.com/garyburd/redigo/redis"
-	"github.com/revel/revel"
 	"time"
 )
 

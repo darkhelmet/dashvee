@@ -3,7 +3,7 @@ package tokenizer
 import (
 	"strings"
 
-	"github.com/darkhelmet/nltk"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk"
 )
 
 func Simple(strs ...string) nltk.TokenChan {

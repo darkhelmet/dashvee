@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/darkhelmet/dashvee",
-	"GoVersion": "go1.3.1",
+	"GoVersion": "go1.5.2",
 	"Packages": [
 		"./..."
 	],
@@ -12,16 +12,12 @@
 		},
 		{
 			"ImportPath": "code.google.com/p/go.net/html",
-			"Comment": "null-223",
-			"Rev": "5dedbdc181629d2f3557caf2667e60eb82c5e6d7"
-		},
-		{
-			"ImportPath": "code.google.com/p/go.net/websocket",
-			"Comment": "null-223",
-			"Rev": "5dedbdc181629d2f3557caf2667e60eb82c5e6d7"
+			"Comment": "null-240",
+			"Rev": "937a34c9de13c766c814510f76bca091dee06028"
 		},
 		{
 			"ImportPath": "github.com/agtorre/gocolorize",
+			"Comment": "v1.0.0",
 			"Rev": "f42b554bf7f006936130c9bb4f971afd2d87f671"
 		},
 		{
@@ -49,13 +45,23 @@
 			"Rev": "179d4d0c4d8d407a32af483c2354df1d2c91e6c3"
 		},
 		{
+			"ImportPath": "github.com/revel/modules/static/app/controllers",
+			"Comment": "v0.12.0",
+			"Rev": "3589d5bf1d1b6da10a88c53701db2af12dfc0811"
+		},
+		{
+			"ImportPath": "github.com/revel/modules/testrunner/app",
+			"Comment": "v0.12.0",
+			"Rev": "3589d5bf1d1b6da10a88c53701db2af12dfc0811"
+		},
+		{
 			"ImportPath": "github.com/revel/revel",
-			"Comment": "v0.11.2",
-			"Rev": "7f4fb7444d9eb650e5f3b9b06a9d4c33ad15cd89"
+			"Comment": "v0.12.0-3-ga9a2ff4",
+			"Rev": "a9a2ff45fae4330ef4116b257bcf9c82e53350c2"
 		},
 		{
 			"ImportPath": "github.com/robfig/config",
-			"Rev": "79f0cd1ab74d099b313aaddb83794d171140863a"
+			"Rev": "0f78529c8c7e3e9a25f15876532ecbc07c7d99e6"
 		},
 		{
 			"ImportPath": "github.com/robfig/pathtree",
@@ -63,18 +69,25 @@
 		},
 		{
 			"ImportPath": "github.com/russross/blackfriday",
-			"Comment": "v1.2-21-g7c8f3c1",
-			"Rev": "7c8f3c1dcc7e0f87c62af34ee193fc3251f6d8a4"
+			"Comment": "v1.2-38-gfe5c2f4",
+			"Rev": "fe5c2f48a9d26d9d276a3c8a7ebde27701b6fe16"
+		},
+		{
+			"ImportPath": "github.com/shurcooL/sanitized_anchor_name",
+			"Rev": "9a8b7d4e8f347bfa230879db9d7d4e4d9e19f962"
 		},
 		{
 			"ImportPath": "golang.org/x/net/html/atom",
-			"Comment": "null-223",
-			"Rev": "5dedbdc181629d2f3557caf2667e60eb82c5e6d7"
+			"Rev": "0cb26f788dd4625d1956c6fd97ffc4c90669d129"
+		},
+		{
+			"ImportPath": "golang.org/x/net/websocket",
+			"Rev": "0cb26f788dd4625d1956c6fd97ffc4c90669d129"
 		},
 		{
 			"ImportPath": "gopkg.in/fsnotify.v1",
-			"Comment": "v1.0.4",
-			"Rev": "ca50e738d35a862c379baf8fffbc3bfd080b3cff"
+			"Comment": "v1.2.8",
+			"Rev": "508915b7500b6e42a87132e4afeb4729cebc7cbb"
 		},
 		{
 			"ImportPath": "launchpad.net/goyaml",

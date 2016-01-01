@@ -1,4 +1,4 @@
-FROM golang:1.4.2-wheezy
+FROM golang:1.5.2
 
 RUN go get github.com/tools/godep
 RUN go get github.com/revel/cmd/revel

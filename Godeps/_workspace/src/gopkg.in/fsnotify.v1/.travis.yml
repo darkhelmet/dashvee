@@ -1,10 +1,20 @@
+sudo: false
 language: go
 
 go:
-  - 1.2
-  - tip
+  - 1.5.2
 
-# not yet https://github.com/travis-ci/travis-ci/issues/2318
+before_script:
+  - go get -u github.com/golang/lint/golint
+
+script:
+  - go test -v --race ./...
+
+after_script:
+  - test -z "$(gofmt -s -l -w . | tee /dev/stderr)"
+  - test -z "$(golint ./...     | tee /dev/stderr)"
+  - go vet ./...
+
 os:
   - linux
   - osx

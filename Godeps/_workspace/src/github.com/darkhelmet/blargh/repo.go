@@ -3,8 +3,8 @@ package blargh
 import (
 	"time"
 
-	"github.com/darkhelmet/blargh/filerepo"
-	. "github.com/darkhelmet/blargh/post"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/filerepo"
+	. "github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/post"
 )
 
 func NewFileRepo(dir string) (Repo, error) {

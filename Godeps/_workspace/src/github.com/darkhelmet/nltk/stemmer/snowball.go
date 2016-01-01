@@ -1,7 +1,7 @@
 package stemmer
 
 import (
-	"bitbucket.org/tebeka/snowball"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/bitbucket.org/tebeka/snowball"
 )
 
 func NewSnowball() (Stemmer, error) {

@@ -1,7 +1,7 @@
 package filter
 
 import (
-	"github.com/darkhelmet/nltk"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk"
 )
 
 // http://armandbrahaj.blog.al/2009/04/14/list-of-english-stop-words/

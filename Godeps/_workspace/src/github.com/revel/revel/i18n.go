@@ -2,7 +2,7 @@ package revel
 
 import (
 	"fmt"
-	"github.com/robfig/config"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/robfig/config"
 	"os"
 	"path/filepath"
 	"regexp"

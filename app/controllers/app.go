@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/darkhelmet/blargh/errors"
-	"github.com/darkhelmet/blargh/post"
-	"github.com/revel/revel"
-	static "github.com/revel/revel/modules/static/app/controllers"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/errors"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/post"
+	static "github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/modules/static/app/controllers"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/revel"
 )
 
 type PageLink struct {

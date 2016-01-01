@@ -4,9 +4,9 @@ package fmatter
 
 import (
 	"bytes"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/launchpad.net/goyaml"
 	"io"
 	"io/ioutil"
-	"launchpad.net/goyaml"
 	"strings"
 	"unicode"
 )

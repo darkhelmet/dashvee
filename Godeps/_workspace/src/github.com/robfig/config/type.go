@@ -50,12 +50,7 @@ func (c *Config) computeVar(beforeValue *string, regx *regexp.Regexp, headsz, ta
 	if i == _DEPTH_VALUES {
 		retVal := ""
 		return &retVal,
-			errors.New(
-				fmt.Sprintf(
-					"Possible cycle while unfolding variables: max depth of %d reached",
-					strconv.Itoa(_DEPTH_VALUES),
-				),
-			)
+			fmt.Errorf("Possible cycle while unfolding variables: max depth of %d reached", _DEPTH_VALUES)
 	}
 
 	return computedVal, nil
@@ -152,7 +147,7 @@ func (c *Config) String(section string, option string) (value string, err error)
 	}
 
 	// $ environment variables
-	computedVal, _ = c.computeVar(&value, envVarRegExp, 2, 1, func(varName *string) string {
+	computedVal, err = c.computeVar(&value, envVarRegExp, 2, 1, func(varName *string) string {
 		return os.Getenv(*varName)
 	})
 	value = *computedVal

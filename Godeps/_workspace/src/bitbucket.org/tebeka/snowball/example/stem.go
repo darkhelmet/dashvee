@@ -1,4 +1,4 @@
-/* Example on using Snowball stemmer 
+/* Example on using Snowball stemmer
 
 This program will read a file, then print "word -> stem(word)" for every word in file
 */
@@ -12,7 +12,7 @@ import (
 	"os"
 	"regexp"
 
-	"bitbucket.org/tebeka/snowball"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/bitbucket.org/tebeka/snowball"
 )
 
 func main() {

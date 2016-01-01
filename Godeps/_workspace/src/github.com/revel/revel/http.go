@@ -2,12 +2,13 @@ package revel
 
 import (
 	"bytes"
-	"code.google.com/p/go.net/websocket"
 	"fmt"
 	"net/http"
 	"sort"
 	"strconv"
 	"strings"
+
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/golang.org/x/net/websocket"
 )
 
 type Request struct {

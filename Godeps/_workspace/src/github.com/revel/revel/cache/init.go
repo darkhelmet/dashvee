@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"github.com/revel/revel"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/revel"
 	"strings"
 	"time"
 )

@@ -2,15 +2,15 @@ package filerepo
 
 import (
 	"fmt"
+	. "github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/errors"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/post"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk/filter"
+	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/nltk/tokenizer"
 	"os"
 	"path/filepath"
 	"sort"
 	"time"
-	. "github.com/darkhelmet/blargh/errors"
-	"github.com/darkhelmet/blargh/post"
-	"github.com/darkhelmet/nltk"
-	"github.com/darkhelmet/nltk/filter"
-	"github.com/darkhelmet/nltk/tokenizer"
 )
 
 type FileRepo struct {
