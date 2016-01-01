@@ -2,11 +2,11 @@ package tests
 
 import (
 	"github.com/darkhelmet/dashvee/app/controllers"
-	"github.com/revel/revel"
+	"github.com/revel/revel/testing"
 )
 
 type AppTest struct {
-	revel.TestSuite
+	testing.TestSuite
 }
 
 func (t AppTest) TestPostsLoad() {
