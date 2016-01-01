@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh"
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/errors"
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/post"
+	"github.com/darkhelmet/blargh"
+	"github.com/darkhelmet/blargh/errors"
+	"github.com/darkhelmet/blargh/post"
 )
 
 type Repo struct {

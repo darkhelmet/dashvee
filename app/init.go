@@ -13,10 +13,10 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/blargh/post"
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/darkhelmet/webutil"
-	"github.com/darkhelmet/dashvee/Godeps/_workspace/src/github.com/revel/revel"
+	"github.com/darkhelmet/blargh/post"
 	"github.com/darkhelmet/dashvee/app/config"
+	"github.com/darkhelmet/webutil"
+	"github.com/revel/revel"
 )
 
 type Formatter interface {
