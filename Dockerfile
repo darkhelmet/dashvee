@@ -12,7 +12,7 @@ RUN godep go install ./...
 ENV PATH   /go/src/github.com/darkhelmet/dashvee/Godeps/_workspace/bin:$PATH
 ENV GOPATH /go/src/github.com/darkhelmet/dashvee/Godeps/_workspace:$GOPATH
 
-ENV ASSET_HOST      http://cf.verboselogging.com
+ENV ASSET_HOST      //dm8f1u892p2vb.cloudfront.net
 ENV CANONICAL_HOST  verboselogging.com
 ENV GOMAXPROCS      4
 ENV TZ              Canada/Mountain

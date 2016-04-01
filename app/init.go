@@ -58,7 +58,7 @@ func gravatar(email string) string {
 	email = strings.ToLower(email)
 	hash := md5.New()
 	io.WriteString(hash, email)
-	return fmt.Sprintf("http://www.gravatar.com/avatar/%x.png", hash.Sum(nil))
+	return fmt.Sprintf("//www.gravatar.com/avatar/%x.png", hash.Sum(nil))
 }
 
 func categoryPath(i interface{}) string {
