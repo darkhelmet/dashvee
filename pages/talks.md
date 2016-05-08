@@ -13,6 +13,15 @@ slugs:
 I enjoy giving talks. Here are some of the ones I've done (the ones with
 slides anyway).
 
+## MountainWest RubyConf
+
+- [Ruby Batteries Included - April 2013](/2013/05/01/ruby-batteries-included)
+
+## RubyConf
+
+-   [rc Files and You: Automating Your Project Lightning
+    Talk](/2012/11/06/rc-files-and-you-automating-your-project)
+
 ## Edmonton Rubyists
 
 -   [Fly your HTTP to the Moon - March 2,
@@ -25,8 +34,3 @@ slides anyway).
     2011](https://gist.github.com/783894)
 -   [Javascript, The Bad Parts - May 22,
     2012](http://darkhelmet.github.com/javascript-the-bad-parts/)
-
-## RubyConf
-
--   [rc Files and You: Automating Your Project Lightning
-    Talk](/2012/11/06/rc-files-and-you-automating-your-project)
