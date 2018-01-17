@@ -15,10 +15,8 @@ tags:
 - capybara
 - selenium
 ---
-You [may](http://gizmodo.com/5714292/rest-in-peace-delicious)
-[have](http://kommons.com/questions/401)
-[heard](http://www.centernetworks.com/yahoo-delicious-closure), but
-Delicious is getting the boot.
+You may have [heard](http://gizmodo.com/5714292/rest-in-peace-delicious), 
+but Delicious is getting the boot.
 
 I left Delicious long ago, because it never did anything for me. Yeah I
 could bookmark things, share them, whatever. I never went back to the
